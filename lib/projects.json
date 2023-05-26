@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"title": "Ampry Ai",
+		"year": "2023",
+		"description": "Ai marketing software designed for Lead Generation and Customer Acquisition.",
+		"linkName": "ampry.ai",
+		"liveLink": "https://ampry.ai"
+	},
+	{
+		"id": 2,
+		"title": "LP Library",
+		"year": "2023",
+		"description": "A collection of landing pages and templates built with Tailwind CSS and Next.js.",
+		"linkName": "lp.ampry.com",
+		"liveLink": "https://lp.ampry.com"
+	},
+	{
+		"id": 3,
+		"title": "Graphico",
+		"year": "2023",
+		"description": "A Productized Design Service for Startups and SaaS Companies.",
+		"linkName": "useGraphico.com",
+		"liveLink": "https://usegraphico.com"
+	}
+]
