@@ -17,10 +17,26 @@
 	},
 	{
 		"id": 3,
+		"title": "Presets.com",
+		"year": "2023",
+		"description": "An Ai generator to create Presets for Lightroom, Photoshop, Premiere, and more.",
+		"linkName": "presets.com",
+		"liveLink": "https://presets.com"
+	},
+	{
+		"id": 4,
 		"title": "Graphico",
 		"year": "2023",
 		"description": "A Productized Design Service for Startups and SaaS Companies.",
 		"linkName": "useGraphico.com",
 		"liveLink": "https://usegraphico.com"
+	},
+	{
+		"id": 4,
+		"title": "Zion Design",
+		"year": "2018",
+		"description": "Small design studio focusing on Web design and branding.",
+		"linkName": "ziondesign.io",
+		"liveLink": "https://ziondesign.io"
 	}
 ]
