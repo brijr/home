@@ -27,6 +27,7 @@ export default function Home() {
 					<a className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-blue-500"
 						href="https://vercel.com">Vercel</a>.{' '}
 				</h2>
+				<h3>As a creative technologist, I combine my passions for design and code to create timeless brands, impactful digital products, and captivating websites.</h3>
 			</Section>
 
 			<Section>
@@ -47,13 +48,18 @@ export default function Home() {
 			</Section>
 
 			<Section>
-				<h3 className="text-xl">Current Projects</h3>
+				<h3 className="text-xl">Current Ventures</h3>
 				{Projects.map((project, index) => (
-					<div key={index}>
-						<h4>{project.title}</h4>
-						<p>{project.description}</p>
-						<a href={project.href}>{project.linkName}</a>
-					</div>
+					<a href={project.href} key={index} className="md:flex">
+						<div className='md:w-48 flex items-baseline gap-2 mb-2 mt-4'>
+							<h4 className='text-lg'>{project.title}</h4>
+							<p className='text-sm opacity-75'>{project.linkName}</p>
+						</div>
+						<div className='w-full flex gap-2'>
+							<p>&rarr;</p>
+							<p>{project.description}</p>
+						</div>
+					</a>
 				))}
 			</Section>
 
@@ -72,7 +78,8 @@ export default function Home() {
 					Send me an email<a href="mailto:bridgertower@gmail.com">here.</a>
 				</p>
 				<p>
-					Created by <a href="https://github.com/brijr">Bridger Tower</a>.
+					Created by <a className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-blue-500"
+						href="https://github.com/brijr">Bridger Tower</a>.
 				</p>
 			</Section>
 		</main>
