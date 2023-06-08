@@ -35,6 +35,13 @@ export default function Home() {
 					,{' '}
 					<a
 						className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-blue-500"
+						href="https://kit.svelte.dev"
+					>
+						SvelteKit
+					</a>
+					,{' '}
+					<a
+						className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-blue-500"
 						href="https://tailwindcss.com"
 					>
 						Tailwind
