@@ -1,27 +1,27 @@
 [
 	{
 		"id": 1,
-		"title": "Ampry Ai",
+		"title": "Wavefinder",
 		"year": "2023",
 		"description": "Ai marketing software designed for Lead Generation and Customer Acquisition.",
-		"linkName": "ampry.ai",
-		"liveLink": "https://ampry.ai"
+		"linkName": "wavefinder.io",
+		"liveLink": "https://wavefinder.io"
 	},
 	{
 		"id": 2,
-		"title": "LP Library",
+		"title": "Builder Kit",
 		"year": "2023",
 		"description": "A collection of landing pages and templates built with Tailwind CSS and Next.js.",
-		"linkName": "lp.ampry.com",
-		"liveLink": "https://lp.ampry.com"
+		"linkName": "builderkit.io",
+		"liveLink": "https://builderkit.io"
 	},
 	{
 		"id": 3,
-		"title": "Presets.com",
+		"title": "flow house",
 		"year": "2023",
 		"description": "An Ai generator to create Presets for Lightroom, Photoshop, Premiere, and more.",
-		"linkName": "presets.com",
-		"liveLink": "https://presets.com"
+		"linkName": "flowhouse.io",
+		"liveLink": "https://flowhouse.io"
 	},
 	{
 		"id": 4,
