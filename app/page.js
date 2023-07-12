@@ -11,7 +11,7 @@ import Section from "@/components/Section";
 
 export default function Home() {
   return (
-    <main>
+    <main className="font-light">
       <Section>
         <Link href="/" className="mb-12 block">
           <Image
@@ -24,42 +24,14 @@ export default function Home() {
         <h1 className="text-3xl">Bridger Tower</h1>
         <h2>
           Designer and Developer from Salt Lake City, UT. Crafting software and
-          websites using{" "}
-          <a
-            className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-blue-500"
-            href="https://figma.com"
-          >
-            Figma
-          </a>
-          ,{" "}
-          <a
-            className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-blue-500"
-            href="https://nextjs.org"
-          >
-            Next.js
-          </a>
-          ,{" "}
-          <a
-            className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-blue-500"
-            href="https://kit.svelte.dev"
-          >
-            SvelteKit
-          </a>
-          ,{" "}
-          <a
-            className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-blue-500"
-            href="https://tailwindcss.com"
-          >
-            Tailwind
-          </a>
-          , and{" "}
-          <a
-            className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-blue-500"
-            href="https://vercel.com"
-          >
-            Vercel
-          </a>
-          .{" "}
+          websites using <a href="https://figma.com">Figma</a>,{" "}
+          <a href="https://nextjs.org">Next.js</a>,{" "}
+          <a href="https://reactjs.org">React</a>,{" "}
+          <a href="https://kit.svelte.dev">SvelteKit</a>,{" "}
+          <a href="https://webflow.com">Webflow</a>,{" "}
+          <a href="https://framer.com">Framer</a>,{" "}
+          <a href="https://tailwindcss.com">Tailwind</a>, and{" "}
+          <a href="https://vercel.com">Vercel</a>.
         </h2>
         <h3>
           As a creative technologist, I combine my passions for design and code
@@ -116,7 +88,7 @@ export default function Home() {
           Send me an email<a href="mailto:bridgertower@gmail.com">here.</a>
         </p>
         <p>
-          Created by{" "}
+          Created by
           <a
             className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-blue-500"
             href="https://github.com/brijr"
