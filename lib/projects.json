@@ -1,42 +1,32 @@
 [
 	{
-		"id": 1,
+		"title": "9d8",
+		"year": "2023",
+		"description": "software development partnership with Cameron Youngblood",
+		"liveLink": "https://9d8.dev"
+	},
+	{
+		"title": "Studio Kaizen",
+		"year": "2023",
+		"description": "branding and visual identity design studio.",
+		"liveLink": "https://studio-kaizen.com"
+	},
+	{
 		"title": "Wavefinder",
 		"year": "2023",
-		"description": "Ai marketing software designed for Lead Generation and Customer Acquisition.",
-		"linkName": "wavefinder.io",
+		"description": "ai marketing software designed for Lead Generation and Customer Acquisition.",
 		"liveLink": "https://wavefinder.io"
 	},
 	{
-		"id": 2,
 		"title": "Builder Kit",
 		"year": "2023",
-		"description": "A collection of landing pages and templates built with Tailwind CSS and Next.js.",
-		"linkName": "builderkit.io",
+		"description": "a collection of ai tools for rapid website development.",
 		"liveLink": "https://builderkit.io"
 	},
 	{
-		"id": 3,
 		"title": "flow house",
 		"year": "2023",
-		"description": "An Ai generator to create Presets for Lightroom, Photoshop, Premiere, and more.",
-		"linkName": "flowhouse.io",
+		"description": "productized webflow, framer, and figma design and development agency.",
 		"liveLink": "https://flowhouse.io"
-	},
-	{
-		"id": 4,
-		"title": "Graphico",
-		"year": "2023",
-		"description": "A Productized Design Service for Startups and SaaS Companies.",
-		"linkName": "useGraphico.com",
-		"liveLink": "https://usegraphico.com"
-	},
-	{
-		"id": 4,
-		"title": "Zion Design",
-		"year": "2018",
-		"description": "Small design studio focusing on Web design and branding.",
-		"linkName": "ziondesign.io",
-		"liveLink": "https://ziondesign.io"
 	}
 ]

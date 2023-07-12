@@ -22,3 +22,7 @@ body {
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
+
+.intro-h2 a:hover {
+  opacity: 0.5;
+}

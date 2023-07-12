@@ -1,7 +1,7 @@
 [
 	{
 		"name": "twitter",
-		"url": "https://www.twitter.com/_brijr"
+		"url": "https://www.twitter.com/bridgertower"
 	},
 	{
 		"name": "github",
@@ -9,10 +9,14 @@
 	},
 	{
 		"name": "youtube",
-		"url": "https://www.youtube.com/@_brijr"
+		"url": "https://www.youtube.com/@bridgertower"
 	},
 	{
-		"name": "photos",
-		"url": "https://www.instagram.com/_brijr"
+		"name": "instagram",
+		"url": "https://www.instagram.com/bridgertower"
+	},
+	{
+		"name": "linkedin",
+		"url": "https://www.linkedin.com/in/brdgr"
 	}
 ]
