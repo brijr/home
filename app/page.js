@@ -11,17 +11,19 @@ import Section from "@/components/Section";
 
 export default function Home() {
   return (
-    <main className="font-light transition-all">
+    <main className="font-light transition-all lowercase">
       <Section>
         <Link href="/" className="mb-12 block">
           <Image
             src={Cap}
             alt="bridger tower key cap"
             width={75}
-            className="dark:invert"
+            className="dark:invert logo"
           />
         </Link>
-        <h1 className="text-3xl opacity-75 mb-12">Bridger Tower</h1>
+        <h1 className="text-3xl transition-all hover:text-purple-500 mb-12 lowercase">
+          Bridger Tower
+        </h1>
         <h2 className="intro-h2">
           Designer and Developer from Salt Lake City, UT. Crafting software and
           websites using <a href="https://figma.com">Figma</a>,{" "}

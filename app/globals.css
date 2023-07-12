@@ -26,3 +26,61 @@ body {
 .intro-h2 a:hover {
   opacity: 0.5;
 }
+
+.logo {
+  position: relative;
+  /* Ensures the logo stays within its container */
+  animation: hoverAnimation 3s infinite ease-in-out;
+}
+
+@keyframes hoverAnimation {
+  0% {
+    transform: translateY(-2px);
+    /* Move 4px to the left */
+  }
+
+  50% {
+    transform: translateY(2px);
+    /* Move 4px to the right */
+  }
+
+  100% {
+    transform: translateY(-2px);
+    /* Move back to the original position */
+  }
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
