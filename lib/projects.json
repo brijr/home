@@ -1,32 +1,26 @@
 [
-	{
-		"title": "9d8",
-		"year": "2023",
-		"description": "software development partnership with Cameron Youngblood",
-		"liveLink": "https://9d8.dev"
-	},
-	{
-		"title": "Studio Kaizen",
-		"year": "2023",
-		"description": "branding and visual identity design studio.",
-		"liveLink": "https://studio-kaizen.com"
-	},
-	{
-		"title": "Wavefinder",
-		"year": "2023",
-		"description": "ai marketing software designed for Lead Generation and Customer Acquisition.",
-		"liveLink": "https://wavefinder.io"
-	},
-	{
-		"title": "Builder Kit",
-		"year": "2023",
-		"description": "a collection of ai tools for rapid website development.",
-		"liveLink": "https://builderkit.io"
-	},
-	{
-		"title": "flow house",
-		"year": "2023",
-		"description": "productized webflow, framer, and figma design and development agency.",
-		"liveLink": "https://flowhouse.io"
-	}
+  {
+    "title": "Studio Kaizen",
+    "year": "2023",
+    "description": "branding and visual identity design studio.",
+    "liveLink": "https://studio-kaizen.com"
+  },
+  {
+    "title": "Wavefinder",
+    "year": "2023",
+    "description": "ai marketing software designed for Lead Generation and Customer Acquisition.",
+    "liveLink": "https://wavefinder.io"
+  },
+  {
+    "title": "Builder Kit",
+    "year": "2023",
+    "description": "a collection of ai tools for rapid website development.",
+    "liveLink": "https://builderkit.io"
+  },
+  {
+    "title": "flow house",
+    "year": "2023",
+    "description": "productized webflow, framer, and figma design and development agency.",
+    "liveLink": "https://flowhouse.io"
+  }
 ]
