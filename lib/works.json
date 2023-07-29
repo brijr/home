@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Frontend Developer at Ampry",
+    "year": "2023-Present",
+    "description": "Building software and web technologies for perfomance marketing.",
+    "liveLink": "https://ampry.com"
+  },
+  {
+    "title": "Designer and Partner at 9D8",
+    "year": "2018-Present",
+    "description": "a design and code studio by bridger tower and cameron youngblood.",
+    "liveLink": "https://9d8.dev"
+  },
+  {
+    "title": "Design Consultant at Zion Design",
+    "year": "2018-Present",
+    "description": "a design studio in Salt Lake City, Utah.",
+    "liveLink": "https://ziondesign.io"
+  },
+
+  {
+    "title": "Web Developer at Tackle.io",
+    "year": "2022-2023",
+    "description": "Lead web developer on the marketing team.",
+    "liveLink": "https://tackle.io"
+  },
+  {
+    "title": "Designer at Ampry",
+    "year": "2020-2022",
+    "description": "Founding designer at Ampry.",
+    "liveLink": "https://ampry.com"
+  }
+]
