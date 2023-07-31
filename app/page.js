@@ -110,10 +110,10 @@ export default function Home() {
 
       <Section>
         <p className="text-sm">
-          Send me an email at <em>bridger___at___9d8.dev</em>
+          . Send me an email at <em>bridger___at___9d8.dev</em>
         </p>
         <p className="text-sm">
-          Created by{" "}
+          . Created by{" "}
           <a className="hover:opacity-50" href="https://github.com/brijr">
             Bridger Tower
           </a>
