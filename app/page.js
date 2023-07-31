@@ -31,12 +31,31 @@ export default function Home() {
           <a className="hover:opacity-50" href="https://nextjs.org">
             Next.js
           </a>
-          , <a href="https://reactjs.org">React</a>,{" "}
-          <a href="https://kit.svelte.dev">SvelteKit</a>,{" "}
-          <a href="https://webflow.com">Webflow</a>,{" "}
-          <a href="https://framer.com">Framer</a>,{" "}
-          <a href="https://tailwindcss.com">Tailwind</a>, and{" "}
-          <a href="https://vercel.com">Vercel</a>.
+          ,{" "}
+          <a className="hover:opacity-50" href="https://reactjs.org">
+            React
+          </a>
+          ,{" "}
+          <a className="hover:opacity-50" href="https://kit.svelte.dev">
+            SvelteKit
+          </a>
+          ,{" "}
+          <a className="hover:opacity-50" href="https://webflow.com">
+            Webflow
+          </a>
+          ,{" "}
+          <a className="hover:opacity-50" href="https://framer.com">
+            Framer
+          </a>
+          ,{" "}
+          <a className="hover:opacity-50" href="https://tailwindcss.com">
+            Tailwind
+          </a>
+          , and{" "}
+          <a className="hover:opacity-50" href="https://vercel.com">
+            Vercel
+          </a>
+          .
         </h2>
         <h3>
           As a creative technologist, I combine my passions for design and code
