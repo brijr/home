@@ -65,7 +65,7 @@ export default function Home() {
       </Section>
 
       <Section>
-        <h3 className="text-xl opacity-75">// Socials</h3>
+        <h3 className="text-xl opacity-75"> `Socials` </h3>
         <div className="flex gap-2">
           {Socials.map((social, index) => (
             <a
@@ -82,7 +82,7 @@ export default function Home() {
       </Section>
 
       <Section>
-        <h3 className="text-xl opacity-75">// Projects</h3>
+        <h3 className="text-xl opacity-75"> `Projects` </h3>
         {Projects.map((project, index) => (
           <a
             key={index}
@@ -100,7 +100,7 @@ export default function Home() {
       </Section>
 
       <Section>
-        <h3 className="text-xl opacity-75">// Work</h3>
+        <h3 className="text-xl opacity-75"> `Work` </h3>
         {Works.map((work, index) => (
           <a
             key={index}
