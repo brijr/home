@@ -12,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={manrope.className}>
-      <body className="p-8 md:p-24 dark:bg-[#222] dark:text-[#EEE]">{children}</body>
+      <body className="p-8 md:p-24 dark:bg-[#222] dark:text-[#EEE]">
+        {children}
+      </body>
     </html>
   );
 }

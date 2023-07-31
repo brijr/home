@@ -12,7 +12,7 @@ import Section from "@/components/Section";
 
 export default function Home() {
   return (
-    <main className="font-light transition-all lowercase scroll-smooth">
+    <main className="font-light text-focus-in transition-all lowercase scroll-smooth">
       <Section>
         <Link href="/" className="mb-12 block">
           <Image
