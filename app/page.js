@@ -12,7 +12,7 @@ import Section from "@/components/Section";
 
 export default function Home() {
   return (
-    <main className="font-light transition-all lowercase">
+    <main className="font-light transition-all lowercase scroll-smooth">
       <Section>
         <Link href="/" className="mb-12 block">
           <Image
@@ -22,10 +22,10 @@ export default function Home() {
             className="dark:invert logo"
           />
         </Link>
-        <h1 className="text-3xl transition-all hover:text-purple-500 mb-12 lowercase">
+        <h1 className="text-4xl text-black dark:text-white transition-all hover:text-purple-500 hover:cursor-not-allowed mb-12 normal-case">
           Bridger Tower
         </h1>
-        <h2 className="intro-h2">
+        <h2 className="intro-h2 text-xl">
           Designer and Developer from Salt Lake City, UT. Crafting software and
           websites using <a href="https://figma.com">Figma</a>,{" "}
           <a className="hover:opacity-50" href="https://nextjs.org">
@@ -46,7 +46,7 @@ export default function Home() {
       </Section>
 
       <Section>
-        <h3 className="text-xl opacity-75">Socials</h3>
+        <h3 className="text-xl opacity-75">// Socials</h3>
         <div className="flex gap-2">
           {Socials.map((social, index) => (
             <a
@@ -63,25 +63,7 @@ export default function Home() {
       </Section>
 
       <Section>
-        <h3 className="text-xl opacity-75">Work</h3>
-        {Works.map((work, index) => (
-          <a
-            key={index}
-            href={work.liveLink}
-            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b hover:opacity-50 border-b-gray-600"
-          >
-            <p className="mb-2 md:mb-0" key={index}>
-              {work.title}
-            </p>
-            <p className="text-xs opacity-50 mb-2 md:mb-0">
-              {work.description}
-            </p>
-          </a>
-        ))}
-      </Section>
-
-      <Section>
-        <h3 className="text-xl opacity-75">Projects</h3>
+        <h3 className="text-xl opacity-75">// Projects</h3>
         {Projects.map((project, index) => (
           <a
             key={index}
@@ -93,6 +75,24 @@ export default function Home() {
             </p>
             <p className="text-xs opacity-50 mb-2 md:mb-0">
               {project.description}
+            </p>
+          </a>
+        ))}
+      </Section>
+
+      <Section>
+        <h3 className="text-xl opacity-75">// Work</h3>
+        {Works.map((work, index) => (
+          <a
+            key={index}
+            href={work.liveLink}
+            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b hover:opacity-50 border-b-gray-600"
+          >
+            <p className="mb-2 md:mb-0" key={index}>
+              {work.title}
+            </p>
+            <p className="text-xs opacity-50 mb-2 md:mb-0">
+              {work.description}
             </p>
           </a>
         ))}
