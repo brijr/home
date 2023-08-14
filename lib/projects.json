@@ -1,9 +1,9 @@
 [
   {
-    "title": "Studio Kaizen",
+    "title": "Alpine Codex",
     "year": "2023",
-    "description": "branding and visual identity design studio.",
-    "liveLink": "https://studio-kaizen.com"
+    "description": "applied artificial intelligence lab.",
+    "liveLink": "https://alpinecodex.com"
   },
   {
     "title": "Travel Mellow",
@@ -28,5 +28,11 @@
     "year": "2023",
     "description": "productized webflow, framer, and figma design and development agency.",
     "liveLink": "https://flowhouse.io"
+  },
+  {
+    "title": "Studio Zion",
+    "year": "2018",
+    "description": "branding and visual identity design studio.",
+    "liveLink": "https://studiozion.cc"
   }
 ]
