@@ -1,8 +1,14 @@
 [
   {
-    "title": "Product Engineer at Ampry",
+    "title": "Design Engineer at Alpine Codex",
     "year": "2023-Present",
-    "description": "Building software and web technologies for perfomance marketing.",
+    "description": "Applied artificial intelligence and customer acquisition marketing.",
+    "liveLink": "https://ampry.com"
+  },
+  {
+    "title": "Design Engineer at Ampry",
+    "year": "2022-Present",
+    "description": "Building software and web technologies for performance marketing.",
     "liveLink": "https://ampry.com"
   },
   {
@@ -12,10 +18,10 @@
     "liveLink": "https://9d8.dev"
   },
   {
-    "title": "Design Consultant at Zion Design",
+    "title": "Designer and Founder at Studio Zion",
     "year": "2018-Present",
     "description": "a design studio in Salt Lake City, Utah.",
-    "liveLink": "https://ziondesign.io"
+    "liveLink": "https://studiozion.cc"
   },
   {
     "title": "Web Developer at Tackle.io",

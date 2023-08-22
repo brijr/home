@@ -19,7 +19,11 @@ export default function Hero() {
       </h1>
       <h2 className="intro-h2 text-xl">
         Designer and Developer from Salt Lake City, UT. Crafting software and
-        websites using <a href="https://figma.com">Figma</a>,{" "}
+        websites using{" "}
+        <a className="hover:opacity-50" href="https://figma.com">
+          Figma
+        </a>
+        ,{" "}
         <a className="hover:opacity-50" href="https://nextjs.org">
           Next.js
         </a>

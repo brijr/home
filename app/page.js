@@ -13,23 +13,6 @@ export default function Home() {
       <Hero />
 
       <Section>
-        <h3 className="text-xl opacity-75">{`// `}Socials</h3>
-        <div className="flex gap-2">
-          {Socials.map((social, index) => (
-            <a
-              key={index}
-              className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-purple-500"
-              href={social.url}
-              target="_blank"
-              rel="nopener noreferrer"
-            >
-              {social.name}
-            </a>
-          ))}
-        </div>
-      </Section>
-
-      <Section>
         <h3 className="text-xl opacity-75">{`// `}Projects</h3>
         {Projects.map((project, index) => (
           <a
@@ -74,6 +57,23 @@ export default function Home() {
         <h3 className="text-xl">Posts</h3>
         <p>Coming Soon...</p>
       </Section> */}
+
+      <Section>
+        <h3 className="text-xl opacity-75">{`// `}Socials</h3>
+        <div className="flex gap-2">
+          {Socials.map((social, index) => (
+            <a
+              key={index}
+              className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-purple-500"
+              href={social.url}
+              target="_blank"
+              rel="nopener noreferrer"
+            >
+              {social.name}
+            </a>
+          ))}
+        </div>
+      </Section>
 
       <Section>
         <p className="text-sm">
