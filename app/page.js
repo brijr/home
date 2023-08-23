@@ -1,7 +1,8 @@
 // Content Imports
-import Projects from "@/lib/projects.json";
-import Socials from "@/lib/socials.json";
-import Works from "@/lib/works.json";
+import Products from "@/utils/products.json";
+import Socials from "@/utils/socials.json";
+import Works from "@/utils/works.json";
+import Ventures from "@/utils/ventures.json";
 
 // Component Imports
 import Section from "@/components/Section";
@@ -13,25 +14,54 @@ export default function Home() {
       <Hero />
 
       <Section>
-        <h3 className="text-xl opacity-75">{`// `}Projects</h3>
-        {Projects.map((project, index) => (
+        <div className="flex gap-2 items-baseline">
+          <h3 className="text-xl opacity-75">{`// `}Ventures</h3>
+          <p className="text-sm opacity-40">Past, Present, and Future Ventures.</p>
+        </div>
+        {Ventures.map((venture, index) => (
           <a
             key={index}
-            href={project.liveLink}
+            href={venture.liveLink}
             className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b hover:opacity-50 border-b-gray-600"
           >
-            <p className="mb-2 md:mb-0" key={index}>
-              {project.title}
-            </p>
+            <p className="mb-2 md:mb-0">{venture.title}</p>
             <p className="text-xs opacity-50 mb-2 md:mb-0">
-              {project.description}
+              {venture.description}
             </p>
           </a>
         ))}
       </Section>
 
       <Section>
-        <h3 className="text-xl opacity-75">{`// `}Work</h3>
+        <div className="flex gap-2 items-baseline">
+          <h3 className="text-xl opacity-75">{`// `}Products</h3>
+          <p className="text-sm opacity-40">
+            Products I have helped design and develop
+          </p>
+        </div>
+        {Products.map((product, index) => (
+          <a
+            key={index}
+            href={product.liveLink}
+            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b hover:opacity-50 border-b-gray-600"
+          >
+            <p className="mb-2 md:mb-0" key={index}>
+              {product.title}
+            </p>
+            <p className="text-xs opacity-50 mb-2 md:mb-0">
+              {product.description}
+            </p>
+          </a>
+        ))}
+      </Section>
+
+      <Section>
+        <div className="flex gap-2 items-baseline">
+          <h3 className="text-xl opacity-75">{`// `}Work</h3>
+          <p className="text-sm opacity-40">
+            The places I have had the privilege of working at.
+          </p>
+        </div>
         {Works.map((work, index) => (
           <a
             key={index}
@@ -47,16 +77,6 @@ export default function Home() {
           </a>
         ))}
       </Section>
-
-      {/* <Section>
-        <h3 className="text-xl">Playground</h3>
-        <p>Coming Soon...</p>
-      </Section> */}
-
-      {/* <Section>
-        <h3 className="text-xl">Posts</h3>
-        <p>Coming Soon...</p>
-      </Section> */}
 
       <Section>
         <h3 className="text-xl opacity-75">{`// `}Socials</h3>
