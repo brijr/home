@@ -1,12 +1,12 @@
 // Content Imports
 import Products from "@/utils/products.json";
 import Socials from "@/utils/socials.json";
-import Works from "@/utils/works.json";
 import Ventures from "@/utils/ventures.json";
+import Works from "@/utils/works.json";
 
 // Component Imports
-import Section from "@/components/Section";
 import Hero from "@/components/Hero";
+import Section from "@/components/Section";
 
 export default function Home() {
   return (
