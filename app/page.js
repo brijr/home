@@ -7,6 +7,7 @@ import Works from "@/utils/works.json";
 // Component Imports
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
+import ImageGrid from "@/components/ImageGrid";
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
       <Section>
         <div className="flex gap-2 items-baseline">
           <h3 className="text-xl opacity-75">{`// `}Ventures</h3>
-          <p className="text-sm opacity-40">Past, Present, and Future Ventures.</p>
+          <p className="text-sm opacity-40">
+            Past, Present, and Future Ventures.
+          </p>
         </div>
         {Ventures.map((venture, index) => (
           <a
@@ -93,6 +96,10 @@ export default function Home() {
             </a>
           ))}
         </div>
+      </Section>
+
+      <Section>
+        <ImageGrid />
       </Section>
 
       <Section>
