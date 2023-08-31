@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Cap from "@/public/1.svg";
+import Cap from "@/public/cap.svg";
 import Section from "@/components/Section";
 
 export default function Hero() {
