@@ -7,15 +7,15 @@ import Works from "@/utils/works.json";
 // Component Imports
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
-import ImageGrid from "@/components/ImageGrid";
+// import ImageGrid from "@/components/ImageGrid";
 
 export default function Home() {
   return (
-    <main className="font-light text-focus-in transition-all lowercase scroll-smooth">
+    <main className="font-light lowercase scroll-smooth">
       <Hero />
 
       <Section>
-        <div className="flex gap-2 items-baseline">
+        <div className="md:flex gap-2 items-baseline">
           <h3 className="text-xl opacity-75">{`// `}Ventures</h3>
           <p className="text-sm opacity-40">
             Past, Present, and Future Ventures.
@@ -36,7 +36,7 @@ export default function Home() {
       </Section>
 
       <Section>
-        <div className="flex gap-2 items-baseline">
+        <div className="md:flex gap-2 items-baseline">
           <h3 className="text-xl opacity-75">{`// `}Products</h3>
           <p className="text-sm opacity-40">
             Products I have helped design and develop
@@ -59,7 +59,7 @@ export default function Home() {
       </Section>
 
       <Section>
-        <div className="flex gap-2 items-baseline">
+        <div className="md:flex gap-2 items-baseline">
           <h3 className="text-xl opacity-75">{`// `}Work</h3>
           <p className="text-sm opacity-40">
             The places I have had the privilege of working at.
@@ -83,7 +83,7 @@ export default function Home() {
 
       <Section>
         <h3 className="text-xl opacity-75">{`// `}Socials</h3>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {Socials.map((social, index) => (
             <a
               key={index}
@@ -98,9 +98,9 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section>
+      {/* <Section>
         <ImageGrid />
-      </Section>
+      </Section> */}
 
       <Section>
         <p className="text-sm">
