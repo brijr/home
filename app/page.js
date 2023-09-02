@@ -7,7 +7,6 @@ import Works from "@/utils/works.json";
 // Component Imports
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
-// import ImageGrid from "@/components/ImageGrid";
 
 export default function Home() {
   return (
