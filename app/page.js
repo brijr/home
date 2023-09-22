@@ -3,15 +3,19 @@ import Products from '@/utils/products.json';
 import Socials from '@/utils/socials.json';
 import Ventures from '@/utils/ventures.json';
 import Works from '@/utils/works.json';
+import Me from '@/public/bridger.jpg'
 
 // Component Imports
 import Hero from '@/components/Hero';
 import Section from '@/components/Section';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className="font-light lowercase scroll-smooth">
       <Hero />
+
+      <Image className='mb-24 hidden md:block' src={Me} alt="pic of me" />
 
       {/* Ventures */}
       <Section>
