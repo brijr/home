@@ -1,8 +1,10 @@
 # Welcome
 
+Website located at [bridger.to](https://bridger.to)
+
 This is the homepage of bridger tower.
 
-Thank you for visiting
+Thank you for visiting.
 
 ## Socials
 
