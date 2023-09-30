@@ -1,0 +1,32 @@
+[
+  {
+    "title": "pandium.com",
+    "year": "2023",
+    "description": "In Progress.",
+    "liveLink": "https://pandium.com"
+  },
+  {
+    "title": "travelmellow.com",
+    "year": "2023",
+    "description": "travel blog and website by Rileigh Ellison.",
+    "liveLink": "https://travelmellow.com"
+  },
+  {
+    "title": "modelofconfidence.com",
+    "year": "2022",
+    "description": "model and confidence training by Pyper America and Elise Rooney.",
+    "liveLink": "https://modelofconfidence.com"
+  },
+  {
+    "title": "flowhouse.io",
+    "year": "2022",
+    "description": "productized webflow, framer, and figma design and development agency.",
+    "liveLink": "https://flowhouse.io"
+  },
+  {
+    "title": "ampry.com",
+    "year": "2021",
+    "description": "travel blog and agency website.",
+    "liveLink": "https://ampry.com"
+  }
+]
