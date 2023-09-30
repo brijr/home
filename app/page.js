@@ -1,6 +1,7 @@
 // Content Imports
-import Products from '@/utils/products.json';
+import Software from '@/utils/software.json';
 import Socials from '@/utils/socials.json';
+import Websites from '@/utils/websites.json'
 import Ventures from '@/utils/ventures.json';
 import Works from '@/utils/works.json';
 import Me from '@/public/bridger.jpg'
@@ -35,22 +36,42 @@ export default function Home() {
         ))}
       </Section>
 
-      {/* Products */}
+      {/* Software */}
       <Section>
         <div className="md:flex gap-2 items-baseline">
-          <h3 className="text-xl opacity-75">{`// `}Products</h3>
-          <p className="text-sm opacity-40">Products I have helped design and develop</p>
+          <h3 className="text-xl opacity-75">{`// `}Software</h3>
+          <p className="text-sm opacity-40">Software I have helped design and develop</p>
         </div>
-        {Products.map((product, index) => (
+        {Software.map((software, index) => (
           <a
             key={index}
-            href={product.liveLink}
+            href={software.liveLink}
             className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b hover:opacity-50 border-b-gray-600"
           >
             <p className="mb-2 md:mb-0" key={index}>
-              {product.title}
+              {software.title}
             </p>
-            <p className="text-xs opacity-50 mb-2 md:mb-0">{product.description}</p>
+            <p className="text-xs opacity-50 mb-2 md:mb-0">{software.description}</p>
+          </a>
+        ))}
+      </Section>
+
+      {/* Websites */}
+      <Section>
+        <div className="md:flex gap-2 items-baseline">
+          <h3 className="text-xl opacity-75">{`// `}Websites</h3>
+          <p className="text-sm opacity-40">Websites that I have designed and developed.</p>
+        </div>
+        {Websites.map((website, index) => (
+          <a
+            key={index}
+            href={website.liveLink}
+            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b hover:opacity-50 border-b-gray-600"
+          >
+            <p className="mb-2 md:mb-0" key={index}>
+              {website.title}
+            </p>
+            <p className="text-xs opacity-50 mb-2 md:mb-0">{website.description}</p>
           </a>
         ))}
       </Section>
@@ -92,10 +113,6 @@ export default function Home() {
           ))}
         </div>
       </Section>
-
-      {/* <Section>
-        <ImageGrid />
-      </Section> */}
 
       <Section>
         <footer>
