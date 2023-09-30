@@ -1,5 +1,5 @@
 // Content Imports
-import Products from '@/utils/products.json';
+import Software from '@/utils/products.json';
 import Socials from '@/utils/socials.json';
 import Ventures from '@/utils/ventures.json';
 import Works from '@/utils/works.json';
@@ -35,13 +35,13 @@ export default function Home() {
         ))}
       </Section>
 
-      {/* Products */}
+      {/* Software */}
       <Section>
         <div className="md:flex gap-2 items-baseline">
-          <h3 className="text-xl opacity-75">{`// `}Products</h3>
-          <p className="text-sm opacity-40">Products I have helped design and develop</p>
+          <h3 className="text-xl opacity-75">{`// `}Software</h3>
+          <p className="text-sm opacity-40">Software I have helped design and develop</p>
         </div>
-        {Products.map((product, index) => (
+        {Software.map((product, index) => (
           <a
             key={index}
             href={product.liveLink}
@@ -92,10 +92,6 @@ export default function Home() {
           ))}
         </div>
       </Section>
-
-      {/* <Section>
-        <ImageGrid />
-      </Section> */}
 
       <Section>
         <footer>
