@@ -1,0 +1,23 @@
+{
+  "company": {
+    "name": "New Company",
+    "homepage": "https://newcompany.com",
+    "projects": [
+      {
+        "title": "New Project",
+        "description": "This is a new project under the new company",
+        "projectURL": "https://newcompany.com/new_project"
+      },
+      {
+        "title": "New Project",
+        "description": "This is a new project under the new company",
+        "projectURL": "https://newcompany.com/new_project"
+      },
+      {
+        "title": "New Project",
+        "description": "This is a new project under the new company",
+        "projectURL": "https://newcompany.com/new_project"
+      }
+    ]
+  }
+}
