@@ -1,26 +1,30 @@
 [
-	{
-		"name": "layers.to",
-		"url": "https://layers.to/brijr"
-	},
-	{
-		"name": "x (twitter)",
-		"url": "https://www.x.com/bridgertower"
-	},
-	{
-		"name": "github",
-		"url": "https://github.com/brijr"
-	},
-	{
-		"name": "youtube",
-		"url": "https://www.youtube.com/@craft-ui"
-	},
-	{
-		"name": "instagram",
-		"url": "https://www.instagram.com/bridgertower"
-	},
-	{
-		"name": "linkedin",
-		"url": "https://www.linkedin.com/in/brdgr"
-	}
+  {
+    "name": "x",
+    "url": "https://www.x.com/bridgertower"
+  },
+  {
+    "name": "github",
+    "url": "https://github.com/brijr"
+  },
+  {
+    "name": "youtube",
+    "url": "https://www.youtube.com/@craft-ui"
+  },
+  {
+    "name": "instagram",
+    "url": "https://www.instagram.com/bridgertower"
+  },
+  {
+    "name": "linkedin",
+    "url": "https://www.linkedin.com/in/brdgr"
+  },
+  {
+    "name": "resume",
+    "url": "https://read.cv/brijr"
+  },
+  {
+    "name": "layers.to",
+    "url": "https://layers.to/brijr"
+  },
 ]
