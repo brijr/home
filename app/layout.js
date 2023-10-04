@@ -7,7 +7,7 @@ const manrope = Manrope({ subsets: ['latin'] });
 export const metadata = {
   title: 'Bridger Tower | Designer and Developer',
   description:
-    'Bridger Tower is a designer and developer from Salt Lake City, UT. Crafting software and websites using Next.js, Tailwind, and Vercel.'
+    'Bridger Tower is a designer, developer, and marketer from Salt Lake City, UT. Crafting software and websites using Next.js, Tailwind, and Vercel.'
 };
 
 export default function RootLayout({ children }) {

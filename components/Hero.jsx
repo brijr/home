@@ -19,7 +19,7 @@ export default function Hero() {
         </span>
       </p>
       <h2 className="text-xl">
-        Designer and Developer from Salt Lake City, UT. Crafting software and
+        Designer, Developer, and Marketer from Salt Lake City, UT. Crafting software and
         websites. Using Next.js, Tailwind CSS, Webflow, Framer, Laravel, and
         more.
       </h2>
