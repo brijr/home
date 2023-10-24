@@ -1,5 +1,5 @@
 // Content Imports
-import Software from "@/config/software.json";
+import Software from "@/config/projects.json";
 import Socials from "@/config/socials.json";
 import Websites from "@/config/websites.json";
 import Ventures from "@/config/ventures.json";
@@ -18,28 +18,6 @@ export default function Home() {
       <Hero />
 
       <Image className="mb-24 hidden md:block" src={Me} alt="pic of me" />
-
-      {/* Ventures */}
-      <Section>
-        <div className="md:flex gap-2 items-baseline">
-          <h3 className="text-xl opacity-75">{`// `}Ventures</h3>
-          <p className="text-sm opacity-40">
-            Past, Present, and Future Ventures.
-          </p>
-        </div>
-        {Ventures.map((venture, index) => (
-          <a
-            key={index}
-            href={venture.liveLink}
-            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b  hover:opacity-50 border-b-gray-600"
-          >
-            <p className="mb-2 md:mb-0">{venture.title}</p>
-            <p className="text-xs opacity-50 mb-2 md:mb-0">
-              {venture.description}
-            </p>
-          </a>
-        ))}
-      </Section>
 
       {/* Software */}
       <Section>
@@ -131,6 +109,29 @@ export default function Home() {
         </div>
       </Section>
 
+      {/* Ventures */}
+      <Section>
+        <div className="md:flex gap-2 items-baseline">
+          <h3 className="text-xl opacity-75">{`// `}Ventures</h3>
+          <p className="text-sm opacity-40">
+            Past, Present, and Future Ventures.
+          </p>
+        </div>
+        {Ventures.map((venture, index) => (
+          <a
+            key={index}
+            href={venture.liveLink}
+            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b  hover:opacity-50 border-b-gray-600"
+          >
+            <p className="mb-2 md:mb-0">{venture.title}</p>
+            <p className="text-xs opacity-50 mb-2 md:mb-0">
+              {venture.description}
+            </p>
+          </a>
+        ))}
+      </Section>
+
+      {/* Footer */}
       <Section>
         <footer>
           <p className="text-sm">
