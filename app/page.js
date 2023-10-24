@@ -1,9 +1,9 @@
 // Content Imports
-import Software from "@/utils/software.json";
-import Socials from "@/utils/socials.json";
-import Websites from "@/utils/websites.json";
-import Ventures from "@/utils/ventures.json";
-import Works from "@/utils/works.json";
+import Software from "@/config/software.json";
+import Socials from "@/config/socials.json";
+import Websites from "@/config/websites.json";
+import Ventures from "@/config/ventures.json";
+import Works from "@/config/works.json";
 import Me from "@/public/bridger.jpg";
 
 // Component Imports
