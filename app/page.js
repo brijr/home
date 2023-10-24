@@ -91,24 +91,6 @@ export default function Home() {
         ))}
       </Section>
 
-      {/* Socials */}
-      <Section>
-        <h3 className="text-xl opacity-75">{`// `}Socials</h3>
-        <div className="flex flex-wrap gap-2">
-          {Socials.map((social, index) => (
-            <a
-              key={index}
-              className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-purple-500"
-              href={social.url}
-              target="_blank"
-              rel="nopener noreferrer"
-            >
-              {social.name}
-            </a>
-          ))}
-        </div>
-      </Section>
-
       {/* Ventures */}
       <Section>
         <div className="md:flex gap-2 items-baseline">
@@ -129,6 +111,24 @@ export default function Home() {
             </p>
           </a>
         ))}
+      </Section>
+
+      {/* Socials */}
+      <Section>
+        <h3 className="text-xl opacity-75">{`// `}Socials</h3>
+        <div className="flex flex-wrap gap-2">
+          {Socials.map((social, index) => (
+            <a
+              key={index}
+              className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-purple-500"
+              href={social.url}
+              target="_blank"
+              rel="nopener noreferrer"
+            >
+              {social.name}
+            </a>
+          ))}
+        </div>
       </Section>
 
       {/* Footer */}
