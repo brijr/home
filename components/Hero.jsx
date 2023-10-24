@@ -20,7 +20,7 @@ export default function Hero() {
       </p>
       <h2 className="text-xl">
         Designer, Developer, and Marketer from Salt Lake City, UT. Crafting software and
-        websites. Using Next.js, Figma, Tailwind CSS, Webflow, Wordpress, Framer, Laravel, and
+        websites. Using Next.js, Figma, Tailwind CSS, Typscript, Webflow, Wordpress, Framer, Laravel, and
         more.
       </h2>
       <h3>

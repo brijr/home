@@ -44,9 +44,9 @@ export default function Home() {
       {/* Software */}
       <Section>
         <div className="md:flex gap-2 items-baseline">
-          <h3 className="text-xl opacity-75">{`// `}Software</h3>
+          <h3 className="text-xl opacity-75">{`// `}Projects & Software</h3>
           <p className="text-sm opacity-40">
-            Software I have helped design and develop
+            Current projects and software that I helped design and develop.
           </p>
         </div>
         {Software.map((software, index) => (
