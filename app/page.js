@@ -5,6 +5,7 @@ import Websites from "@/config/websites.json";
 import Ventures from "@/config/ventures.json";
 import Works from "@/config/works.json";
 import Me from "@/public/bridger.jpg";
+import Pixel from "@/public/bt.png"
 
 // Component Imports
 import Hero from "@/components/Hero";
@@ -30,7 +31,7 @@ export default function Home() {
           <a
             key={index}
             href={venture.liveLink}
-            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b hover:opacity-50 border-b-gray-600"
+            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b  hover:opacity-50 border-b-gray-600"
           >
             <p className="mb-2 md:mb-0">{venture.title}</p>
             <p className="text-xs opacity-50 mb-2 md:mb-0">
@@ -137,11 +138,12 @@ export default function Home() {
           </p>
           <p className="text-sm">
             . Created by{" "}
-            <a className="hover:opacity-50" href="https://github.com/brijr">
+            <a className="hover:opacity-50 border-b border-purple-500" href="https://github.com/brijr/home">
               Bridger Tower
             </a>
             . All rights reserved.
           </p>
+          <Image src={Pixel} alt="pixel image of me" className="w-24 mt-8" />
         </footer>
       </Section>
     </main>

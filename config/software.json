@@ -22,5 +22,17 @@
     "year": "2023",
     "description": "a system for programmatic seo and content marketing.",
     "liveLink": "#"
+  },
+  {
+    "title": "Fjord",
+    "year": "2023",
+    "description": "a next js application to build headless WordPress applications and sites.",
+    "liveLink": "https://fjord.dev"
+  },
+  {
+    "title": "Craft UI",
+    "year": "2023",
+    "description": "Next JS Component Library for Landing Pages and Marketing Websites",
+    "liveLink": "https://craftui.org"
   }
 ]
