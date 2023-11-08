@@ -5,7 +5,7 @@ import Websites from "@/config/websites.json";
 import Ventures from "@/config/ventures.json";
 import Works from "@/config/works.json";
 import Me from "@/public/bridger.jpg";
-import Pixel from "@/public/bt.png"
+import Pixel from "@/public/bt.png";
 
 // Component Imports
 import Hero from "@/components/Hero";
@@ -14,113 +14,17 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="font-light lowercase scroll-smooth">
+    <main className="scroll-smooth font-light lowercase">
       <Hero />
-
-      <Image className="mb-24 hidden md:block" src={Me} alt="pic of me" />
-
-      {/* Software */}
-      <Section>
-        <div className="md:flex gap-2 items-baseline">
-          <h3 className="text-xl opacity-75">{`// `}Projects & Software</h3>
-          <p className="text-sm opacity-40">
-            Current projects and software that I helped design and develop.
-          </p>
-        </div>
-        {Software.map((software, index) => (
-          <a
-            key={index}
-            href={software.liveLink}
-            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b hover:opacity-50 border-b-gray-600"
-          >
-            <p className="mb-2 md:mb-0" key={index}>
-              {software.title}
-            </p>
-            <p className="text-xs opacity-50 mb-2 md:mb-0">
-              {software.description}
-            </p>
-          </a>
-        ))}
-      </Section>
-
-      {/* Websites */}
-      <Section>
-        <div className="md:flex gap-2 items-baseline">
-          <h3 className="text-xl opacity-75">{`// `}Websites</h3>
-          <p className="text-sm opacity-40">
-            Websites that I have designed and developed.
-          </p>
-        </div>
-        {Websites.map((website, index) => (
-          <a
-            key={index}
-            href={website.liveLink}
-            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b hover:opacity-50 border-b-gray-600"
-          >
-            <p className="mb-2 md:mb-0" key={index}>
-              {website.title}
-            </p>
-            <p className="text-xs opacity-50 mb-2 md:mb-0">
-              {website.description}
-            </p>
-          </a>
-        ))}
-      </Section>
-
-      {/* Work */}
-      <Section>
-        <div className="md:flex gap-2 items-baseline">
-          <h3 className="text-xl opacity-75">{`// `}Work</h3>
-          <p className="text-sm opacity-40">
-            The places I have had the privilege of working at.
-          </p>
-        </div>
-        {Works.map((work, index) => (
-          <a
-            key={index}
-            href={work.liveLink}
-            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b hover:opacity-50 border-b-gray-600"
-          >
-            <p className="mb-2 md:mb-0" key={index}>
-              {work.title}
-            </p>
-            <p className="text-xs opacity-50 mb-2 md:mb-0">
-              {work.description}
-            </p>
-          </a>
-        ))}
-      </Section>
-
-      {/* Ventures */}
-      <Section>
-        <div className="md:flex gap-2 items-baseline">
-          <h3 className="text-xl opacity-75">{`// `}Ventures</h3>
-          <p className="text-sm opacity-40">
-            Past, Present, and Future Ventures.
-          </p>
-        </div>
-        {Ventures.map((venture, index) => (
-          <a
-            key={index}
-            href={venture.liveLink}
-            className="md:flex transition-all md:gap-2 justify-between items-baseline py-2 border-b  hover:opacity-50 border-b-gray-600"
-          >
-            <p className="mb-2 md:mb-0">{venture.title}</p>
-            <p className="text-xs opacity-50 mb-2 md:mb-0">
-              {venture.description}
-            </p>
-          </a>
-        ))}
-      </Section>
 
       {/* Socials */}
       <Section>
-        <h3 className="text-xl opacity-75">{`// `}Socials</h3>
+        <h3 className="sr-only text-xl opacity-75">{`// `}Socials</h3>
         <div className="flex flex-wrap gap-2">
           {Socials.map((social, index) => (
             <a
               key={index}
-              className="transition-all border-b border-black dark:border-white hover:pb-1 hover:-mt-1 hover:border-purple-500"
+              className="border-b border-black transition-all hover:-mt-1 hover:border-purple-500 hover:pb-1 dark:border-white"
               href={social.url}
               target="_blank"
               rel="nopener noreferrer"
@@ -131,6 +35,102 @@ export default function Home() {
         </div>
       </Section>
 
+      <Image className="mb-24 hidden md:block" src={Me} alt="pic of me" />
+
+      {/* Software */}
+      <Section>
+        <div className="items-baseline gap-2 md:flex">
+          <h3 className="text-xl opacity-75">{`// `}Projects & Software</h3>
+          <p className="text-sm opacity-40">
+            Current projects and software that I helped design and develop.
+          </p>
+        </div>
+        {Software.map((software, index) => (
+          <a
+            key={index}
+            href={software.liveLink}
+            className="items-baseline justify-between border-b border-b-gray-600 py-2 transition-all hover:opacity-50 md:flex md:gap-2"
+          >
+            <p className="mb-2 md:mb-0" key={index}>
+              {software.title}
+            </p>
+            <p className="mb-2 text-xs opacity-50 md:mb-0">
+              {software.description}
+            </p>
+          </a>
+        ))}
+      </Section>
+
+      {/* Websites */}
+      <Section>
+        <div className="items-baseline gap-2 md:flex">
+          <h3 className="text-xl opacity-75">{`// `}Websites</h3>
+          <p className="text-sm opacity-40">
+            Websites that I have designed and developed.
+          </p>
+        </div>
+        {Websites.map((website, index) => (
+          <a
+            key={index}
+            href={website.liveLink}
+            className="items-baseline justify-between border-b border-b-gray-600 py-2 transition-all hover:opacity-50 md:flex md:gap-2"
+          >
+            <p className="mb-2 md:mb-0" key={index}>
+              {website.title}
+            </p>
+            <p className="mb-2 text-xs opacity-50 md:mb-0">
+              {website.description}
+            </p>
+          </a>
+        ))}
+      </Section>
+
+      {/* Work */}
+      <Section>
+        <div className="items-baseline gap-2 md:flex">
+          <h3 className="text-xl opacity-75">{`// `}Work</h3>
+          <p className="text-sm opacity-40">
+            The places I have had the privilege of working at.
+          </p>
+        </div>
+        {Works.map((work, index) => (
+          <a
+            key={index}
+            href={work.liveLink}
+            className="items-baseline justify-between border-b border-b-gray-600 py-2 transition-all hover:opacity-50 md:flex md:gap-2"
+          >
+            <p className="mb-2 md:mb-0" key={index}>
+              {work.title}
+            </p>
+            <p className="mb-2 text-xs opacity-50 md:mb-0">
+              {work.description}
+            </p>
+          </a>
+        ))}
+      </Section>
+
+      {/* Ventures */}
+      <Section>
+        <div className="items-baseline gap-2 md:flex">
+          <h3 className="text-xl opacity-75">{`// `}Ventures</h3>
+          <p className="text-sm opacity-40">
+            Past, Present, and Future Ventures.
+          </p>
+        </div>
+        {Ventures.map((venture, index) => (
+          <a
+            key={index}
+            href={venture.liveLink}
+            className="items-baseline justify-between border-b border-b-gray-600 py-2 transition-all hover:opacity-50  md:flex md:gap-2"
+          >
+            <p className="mb-2 md:mb-0">{venture.title}</p>
+            <p className="mb-2 text-xs opacity-50 md:mb-0">
+              {venture.description}
+            </p>
+          </a>
+        ))}
+      </Section>
+
       {/* Footer */}
       <Section>
         <footer>
@@ -139,12 +139,15 @@ export default function Home() {
           </p>
           <p className="text-sm">
             . Created by{" "}
-            <a className="hover:opacity-50 border-b border-purple-500" href="https://github.com/brijr/home">
+            <a
+              className="border-b border-purple-500 hover:opacity-50"
+              href="https://github.com/brijr/home"
+            >
               Bridger Tower
             </a>
             . All rights reserved.
           </p>
-          <Image src={Pixel} alt="pixel image of me" className="w-24 mt-8" />
+          <Image src={Pixel} alt="pixel image of me" className="mt-8 w-24" />
         </footer>
       </Section>
     </main>
