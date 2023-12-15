@@ -14,4 +14,4 @@ Thank you for visiting.
 ## Projects
 
 *Alpine Codex*: [alpinecodex.com](https://alpinecodex.com)
-*9d8 dev*: [9d8.dev](https://9d8.dev)
+*9d8*: [9d8.dev](https://9d8.dev)
