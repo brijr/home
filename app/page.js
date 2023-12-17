@@ -4,7 +4,6 @@ import Socials from "@/config/socials.json";
 import Websites from "@/config/websites.json";
 import Ventures from "@/config/ventures.json";
 import Works from "@/config/works.json";
-import Me from "@/public/bridger.jpg";
 import Pixel from "@/public/bt.png";
 
 // Component Imports
