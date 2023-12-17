@@ -18,7 +18,7 @@ export default function Home() {
       <Hero />
 
       {/* Socials */}
-      <Section>
+      <Section className="pt-12">
         <h3 className="sr-only text-xl opacity-75">{`// `}Socials</h3>
         <div className="flex flex-wrap gap-2">
           {Socials.map((social, index) => (
@@ -34,8 +34,6 @@ export default function Home() {
           ))}
         </div>
       </Section>
-
-      <Image className="mb-24 hidden md:block" src={Me} alt="pic of me" />
 
       {/* Software */}
       <Section>

@@ -1,13 +1,13 @@
-import { Manrope } from 'next/font/google';
-import './globals.css';
-import { Analytics } from '@vercel/analytics/react';
+import { Manrope } from "next/font/google";
+import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
-const manrope = Manrope({ subsets: ['latin'] });
+const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Bridger Tower | Designer and Developer',
+  title: "Bridger Tower | Designer and Developer",
   description:
-    'Bridger Tower is a designer, developer, and marketer from Salt Lake City, UT. Crafting software and websites using Next.js, Tailwind, and Vercel.'
+    "Bridger Tower is a designer, developer, and marketer from Salt Lake City, UT. Crafting software and websites using Next.js, Tailwind, and Vercel.",
 };
 
 export default function RootLayout({ children }) {
@@ -23,7 +23,9 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image:width" content="<generated>" />
         <meta name="twitter:image:height" content="<generated>" />
       </head>
-      <body className="p-8 md:p-24 dark:bg-[#222] dark:text-[#EEE]">{children}</body>
+      <body className="p-8 dark:bg-[#222] dark:text-[#EEE] md:p-24">
+        {children}
+      </body>
       <Analytics />
     </html>
   );
