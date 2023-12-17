@@ -21,8 +21,7 @@ export default function Hero() {
       </p>
       <h2 className="text-xl">
         Designer, Developer, and Marketer from Salt Lake City, UT. Crafting
-        software and websites. Using Next.js, Figma, Tailwind CSS, Typscript,
-        Webflow, Wordpress, Framer, Laravel, and more.
+        software and websites.
       </h2>
       <h3>
         As a creative technologist, I combine my passion for design and code to
@@ -34,6 +33,7 @@ export default function Hero() {
           timeless brands
         </a>
         , comprehensive design systems,{" "}
+        
         <a
           className="border-b border-purple-500"
           href="https://product.bridger.to"
