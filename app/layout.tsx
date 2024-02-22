@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
 import { ReactNode } from "react";
+import { Layout } from "@/components/craft";
+import { ThemeProvider } from "@/components/theme-provider";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -15,16 +17,22 @@ const fontSans = FontSans({
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
+    <Layout>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
-    </html>
+    </Layout>
   );
 }
