@@ -1,5 +1,9 @@
 export const socials = [
   {
+    name: "Resume",
+    href: "https://read.cv/brijr",
+  },
+  {
     name: "GitHub",
     href: "https://github.com/brijr",
   },

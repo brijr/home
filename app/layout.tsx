@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Inter as FontSans } from "next/font/google";
+import { Manrope as FontSans } from "next/font/google";
 import { ReactNode } from "react";
 import { Layout } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme-provider";
