@@ -31,7 +31,7 @@ const bt = {
   categories: [
     { label: "Software", href: "/software" },
     { label: "Websites", href: "/websites" },
-    { label: "Brands", href: "/brands" },
+    { label: "Brands", href: "/brands" },{ label: "Open Source", href: "/os" },
   ],
 
   // Software Projects
