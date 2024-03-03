@@ -1,15 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import cap from "@/public/cap.svg";
-import { ModeToggle } from "@/components/mode-toggle";
 import bt from "@/lib/brijr";
-import { Button } from "@/components/ui/button";
-import { Twitter, Github } from "lucide-react";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="max-w-xl mx-auto ">
+    <main className="max-w-xl mx-auto">
       <Intro />
     </main>
   );
@@ -18,30 +13,9 @@ export default function Home() {
 const Intro = () => {
   return (
     <section className="my-12 lg:my-24">
-      <div className="grid gap-6">
-        <div className="mb-24 flex justify-between items-center">
-          <Link href="/">
-            <Image
-              className="dark:invert transition-all hover:opacity-70"
-              src={cap}
-              width={54}
-              height={54}
-              alt="a key cap with a b for bridger"
-            ></Image>
-          </Link>
-          <div className="flex items-center">
-            <Button className="px-2" asChild variant="link">
-              <Link href="https://read.cv/brijr">Resume</Link>
-            </Button>
-            <Button className="px-2" asChild variant="link">
-              <Link href="https://github.com/brijr">GitHub</Link>
-            </Button>
-            <ModeToggle />
-          </div>
-        </div>
-
+      <div className="grid gap-8 md:gap-12">
         {/* Hero text */}
-        <h1>
+        <h1 className="text-primary">
           Bridger Tower{" "}
           <span className="text-muted-foreground">
             (aka. <a href="https://github.com/brijr">brijr</a>)
@@ -49,29 +23,44 @@ const Intro = () => {
           is a Designer and Developer
         </h1>
         <h2>I build software, websites, and brands.</h2>
-        <Paragraph>
-          I am a designer and developer from Utah. I work as a design engineer
-          at <OutLink href="https://ampry.com">Ampry</OutLink>. I founded{" "}
-          <OutLink href="https://zion.surf">Zion Design</OutLink> and I am
-          currently building{" "}
-          <OutLink href="https://alpinecodex.com">Alpine Codex</OutLink> and{" "}
-          <OutLink href="https://9d8.dev">9d8</OutLink> to deliver next-gen
-          performance marketing software.
-        </Paragraph>
-        <Paragraph>
-          I belong to the intersection of design, code, and marketing. After
-          studying marketing in university, I started my career as a marketing
-          designer before diving into software design and development.
-        </Paragraph>
-        <Paragraph>
-          thanks for visiting and feel free to reach out to me. Always looking
-          to collaborate and learn from others.
-        </Paragraph>
-        {/* General Links */}
-        <div className="grid gap-2">
+        <div className="grid gap-4">
+          <Paragraph>
+            I am a designer and developer from Utah. I work as a design engineer
+            at <OutLink href="https://ampry.com">Ampry</OutLink>. I founded{" "}
+            <OutLink href="https://zion.surf">Zion Design</OutLink> and I am
+            currently building{" "}
+            <OutLink href="https://alpinecodex.com">Alpine Codex</OutLink> and{" "}
+            <OutLink href="https://9d8.dev">9d8</OutLink> to deliver next-gen
+            performance marketing software.
+          </Paragraph>
+          <Paragraph>
+            I belong to the intersection of design, code, and marketing. After
+            studying marketing in university, I started my career as a marketing
+            designer before diving into software design and development.
+          </Paragraph>
+          <Paragraph>
+            thanks for visiting and feel free to reach out to me. Always looking
+            to collaborate and learn from others.
+          </Paragraph>
+        </div>
+        <div className="grid gap-2 text-muted-foreground">
+          Portfolio
+          {bt.links.map((link) => (
+            <Link
+              className="flex group gap-1 items-center text-primary hover:underline underline-offset-2 decoration-purple-400"
+              key={link.label}
+              href={link.href}
+            >
+              <ArrowRight className="w-4 h-4 -mb-px transition-all group-hover:-rotate-45" />
+              {link.label}
+            </Link>
+          ))}
+        </div>
+        <div className="grid gap-2 text-muted-foreground">
+          Other Sites
           {bt.links.map((link) => (
             <a
-              className="flex group gap-1 items-center"
+              className="flex group gap-1 items-center text-primary hover:underline underline-offset-2 decoration-purple-400"
               key={link.label}
               href={link.href}
             >

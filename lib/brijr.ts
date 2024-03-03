@@ -25,8 +25,15 @@ const bt = {
   links: [
     { label: "components.bridger.to", href: "https://components.bridger.to" },
     { label: "product.bridger.to", href: "https://product.bridger.to" },
-    { label: "zion.surf", href: "https://zion.surf" },
+    { label: "design.bridger.to", href: "https://zion.surf" },
   ],
+
+  categories: [
+    { label: "Software", href: "/software" },
+    { label: "Websites", href: "/websites" },
+    { label: "Brands", href: "/brands" },
+  ],
+
   // Software Projects
   projects: [
     {
