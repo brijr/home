@@ -1,4 +1,3 @@
-import { Main, Section, Container } from "@/components/craft";
 import Image from "next/image";
 import cap from "@/public/cap.svg";
 import { ModeToggle } from "@/components/mode-toggle";
@@ -8,16 +7,15 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-2xl lg:text-lg mx-auto ">
       <Intro />
-      <ModeToggle />
     </main>
   );
 }
 
 const Intro = () => {
   return (
-    <section className="max-w-2xl lg:text-lg mx-auto my-12 lg:my-24">
+    <section className="my-12 lg:my-24">
       <div className="container grid gap-6">
         <Image
           className="mb-24 dark:invert"
@@ -57,6 +55,7 @@ const Intro = () => {
             </Paragraph>
           ))}
         </div>
+        <ModeToggle />
       </div>
     </section>
   );
