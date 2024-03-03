@@ -23,11 +23,9 @@ const bt = {
   ],
 
   links: [
-    { label: "posts", href: "/posts" },
-    { label: "resume", href: "https://read.cv/brijr" },
-    { label: "components", href: "https://components.bridger.to" },
-    { label: "product", href: "https://product.bridger.to" },
-    { label: "zion", href: "https://zion.surf" },
+    { label: "components.bridger.to", href: "https://components.bridger.to" },
+    { label: "product.bridger.to", href: "https://product.bridger.to" },
+    { label: "zion.surf", href: "https://zion.surf" },
   ],
   // Software Projects
   projects: [

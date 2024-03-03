@@ -1,13 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import cap from "@/public/cap.svg";
 import { ModeToggle } from "@/components/mode-toggle";
 import bt from "@/lib/brijr";
-import Balancer from "react-wrap-balancer";
-import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import Github from "@/public/github.svg";
 
 export default function Home() {
   return (
-    <main className="max-w-2xl lg:text-lg mx-auto ">
+    <main className="max-w-2xl mx-auto ">
       <Intro />
     </main>
   );
@@ -17,20 +18,44 @@ const Intro = () => {
   return (
     <section className="my-12 lg:my-24">
       <div className="container grid gap-6">
-        <Image
-          className="mb-24 dark:invert"
-          src={cap}
-          width={54}
-          height={54}
-          alt="a key cap with a b for bridger"
-        ></Image>
+        <div className="mb-24 flex justify-between items-center">
+          <OutLink href="https://twitter.com/bridgertower">
+            <Image
+              className="dark:invert transition-all hover:opacity-70"
+              src={cap}
+              width={54}
+              height={54}
+              alt="a key cap with a b for bridger"
+            ></Image>
+          </OutLink>
+          <div className="flex items-center gap-1">
+            <Button asChild variant="outline" size="icon">
+              <Link href="https://github.com/brijr">
+                <Image
+                  src={Github}
+                  alt="github logo"
+                  className="h-[1.2rem] w-[1.2rem] "
+                />
+              </Link>
+            </Button>
+            <ModeToggle />
+          </div>
+        </div>
 
         {/* Hero text */}
         <h1>Bridger Tower is a Designer and Developer</h1>
+        {/* General Links */}
+        <div className="grid gap-2">
+          Links:
+          {bt.links.map((link) => (
+            <a key={link.label} href={link.href}>
+              {link.label}
+            </a>
+          ))}
+        </div>
         <Paragraph>
-          I am a designer and developer from Salt Lake City, UT. I work as a
-          design engineer at
-          <OutLink href="https://ampry.com"> Ampry</OutLink>. I am currently
+          I am a designer and developer from Utah. I work as a design engineer
+          at <OutLink href="https://ampry.com">Ampry</OutLink>. I am currently
           building{" "}
           <OutLink href="https://alpinecodex.com">Alpine Codex</OutLink> and{" "}
           <OutLink href="https://9d8.dev">9d8</OutLink> to deliver next-gen
@@ -45,17 +70,6 @@ const Intro = () => {
           thanks for visiting and feel free to reach out to me. Always looking
           to collaborate and learn from others.
         </Paragraph>
-
-        {/* Social Links */}
-        <div className="flex flex-wrap gap-2">
-          Socials:
-          {bt.socials.map((social) => (
-            <Paragraph key={social.label}>
-              <OutLink href={social.href}>{social.label}</OutLink> \
-            </Paragraph>
-          ))}
-        </div>
-        <ModeToggle />
       </div>
     </section>
   );
