@@ -48,6 +48,7 @@ const Intro = () => {
           </span>{" "}
           is a Designer and Developer
         </h1>
+        <h2>I build software, websites, and brands.</h2>
         <Paragraph>
           I am a designer and developer from Utah. I work as a design engineer
           at <OutLink href="https://ampry.com">Ampry</OutLink>. I founded{" "}
