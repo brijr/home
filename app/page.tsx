@@ -15,14 +15,16 @@ const Intro = () => {
     <section className="my-12 lg:my-24">
       <div className="grid gap-8 md:gap-12">
         {/* Hero text */}
-        <h1 className="text-primary">
-          Bridger Tower{" "}
-          <span className="text-muted-foreground">
-            (aka. <a href="https://github.com/brijr">brijr</a>)
-          </span>{" "}
-          is a Designer and Developer
-        </h1>
-        <h2>I build software, websites, and brands.</h2>
+        <div className="grid gap-4">
+          <h1 className="text-primary">
+            Bridger Tower{" "}
+            <span className="text-muted-foreground">
+              (aka. <a href="https://github.com/brijr">brijr</a>)
+            </span>{" "}
+            is a Designer and Developer
+          </h1>
+          <h2>I build software, websites, and brands.</h2>
+        </div>
         <div className="grid gap-4">
           <Paragraph>
             I am a designer and developer from Utah. I work as a design engineer
@@ -45,7 +47,7 @@ const Intro = () => {
         </div>
         <div className="grid gap-2 text-muted-foreground">
           Portfolio
-          {bt.links.map((link) => (
+          {bt.categories.map((link) => (
             <Link
               className="flex group gap-1 items-center text-primary hover:underline underline-offset-2 decoration-purple-400"
               key={link.label}
@@ -57,7 +59,7 @@ const Intro = () => {
           ))}
         </div>
         <div className="grid gap-2 text-muted-foreground">
-          Other Sites
+          More
           {bt.links.map((link) => (
             <a
               className="flex group gap-1 items-center text-primary hover:underline underline-offset-2 decoration-purple-400"
