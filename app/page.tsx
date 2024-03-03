@@ -2,89 +2,85 @@ import { Main, Section, Container } from "@/components/craft";
 import Image from "next/image";
 import cap from "@/public/cap.svg";
 import { ModeToggle } from "@/components/mode-toggle";
-import { socials } from "@/lib/info";
+import bt from "@/lib/brijr";
 import Balancer from "react-wrap-balancer";
 import Link from "next/link";
 
-const nav_links = [
-  { href: "/posts", label: "posts" },
-  { href: "https://read.cv/brijr", label: "resume" },
-  { href: "https://components.bridger.to", label: "components" },
-  { href: "https://zion.surf", label: "zion" },
-];
-
 export default function Home() {
   return (
-    <Main>
-      <Hero />
-    </Main>
+    <main>
+      <Intro />
+      <ModeToggle />
+    </main>
   );
 }
 
-const Hero = () => {
+const Intro = () => {
   return (
-    <Section className="border-b">
-      <Container>
-        <div className="flex justify-between">
-          <Image
-            className="!mt-0 dark:invert"
-            src={cap}
-            width={54}
-            height={54}
-            alt="a key cap with a b for bridger"
-          ></Image>
-          <div className="flex items-center not-prose gap-2 h-fit">
-            {/* Navigation Links */}
-            {nav_links.map((link) => (
-              <Link
-                key={link.href}
-                className="hover:opacity-75 transition-all"
-                href={link.href}
-              >
-                {link.label}
-              </Link>
-            ))}
-            {/* Light/Dark mode toggle */}
-            <ModeToggle />
-          </div>
-        </div>
+    <section className="max-w-2xl lg:text-lg mx-auto my-12 lg:my-24">
+      <div className="container grid gap-6">
+        <Image
+          className="mb-24 dark:invert"
+          src={cap}
+          width={54}
+          height={54}
+          alt="a key cap with a b for bridger"
+        ></Image>
 
         {/* Hero text */}
-        <h1 className="text-xl">
-          <strong>Bridger Tower</strong> is a Designer and Developer
-        </h1>
-        <div className="max-w-2xl">
-          <p>
-            I am a designer and developer from Salt Lake City, UT. I work at{" "}
-            <a href="https://ampry.com">Ampry</a> as a software engineer. I am
-            currently building{" "}
-            <a href="https://alpinecodex.com">Alpine Codex</a> and{" "}
-            <a href="https://9d8.dev">9d8</a> to deliver next-gen performance
-            marketing software.
-          </p>
-          <p>
-            I started my career as a graphic and web designer before diving into
-            software design and development. I studied I have a passion for
-            design and code and I aspire to enable others.
-          </p>
-          <p>
-            thanks for visiting and feel free to reach out to me on any of the
-            channels below.
-          </p>
-        </div>
+        <h1>Bridger Tower is a Designer and Developer</h1>
+        <Paragraph>
+          I am a designer and developer from Salt Lake City, UT. I work as a
+          design engineer at
+          <OutLink href="https://ampry.com"> Ampry</OutLink>. I am currently
+          building{" "}
+          <OutLink href="https://alpinecodex.com">Alpine Codex</OutLink> and{" "}
+          <OutLink href="https://9d8.dev">9d8</OutLink> to deliver next-gen
+          performance marketing software.
+        </Paragraph>
+        <Paragraph>
+          I belong to the intersection of design, code, and marketing. After
+          studying marketing in university, I started my career as a marketing
+          designer before diving into software design and development.
+        </Paragraph>
+        <Paragraph>
+          thanks for visiting and feel free to reach out to me. Always looking
+          to collaborate and learn from others.
+        </Paragraph>
 
         {/* Social Links */}
-        <div className="flex gap-2">
-          {socials.map((social) => (
-            <p key={social.name}>
-              <a href={social.href} target="_blank" rel="noopener noreferrer">
-                {social.name}
-              </a>{" "}
-              \
-            </p>
+        <div className="flex flex-wrap gap-2">
+          Socials:
+          {bt.socials.map((social) => (
+            <Paragraph key={social.label}>
+              <OutLink href={social.href}>{social.label}</OutLink> \
+            </Paragraph>
           ))}
         </div>
-      </Container>
-    </Section>
+      </div>
+    </section>
   );
+};
+
+const OutLink = ({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <a
+      className="hover:text-foreground transition-all underline underline-offset-2 decoration-purple-400"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
+  );
+};
+
+const Paragraph = ({ children }: { children: React.ReactNode }) => {
+  return <p className="text-muted-foreground">{children}</p>;
 };
