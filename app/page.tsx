@@ -4,11 +4,12 @@ import cap from "@/public/cap.svg";
 import { ModeToggle } from "@/components/mode-toggle";
 import bt from "@/lib/brijr";
 import { Button } from "@/components/ui/button";
-import Github from "@/public/github.svg";
+import { Twitter, Github } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="max-w-2xl mx-auto ">
+    <main className="max-w-xl mx-auto ">
       <Intro />
     </main>
   );
@@ -17,9 +18,9 @@ export default function Home() {
 const Intro = () => {
   return (
     <section className="my-12 lg:my-24">
-      <div className="container grid gap-6">
+      <div className="grid gap-6">
         <div className="mb-24 flex justify-between items-center">
-          <OutLink href="https://twitter.com/bridgertower">
+          <Link href="/">
             <Image
               className="dark:invert transition-all hover:opacity-70"
               src={cap}
@@ -27,36 +28,28 @@ const Intro = () => {
               height={54}
               alt="a key cap with a b for bridger"
             ></Image>
-          </OutLink>
-          <div className="flex items-center gap-1">
-            <Button asChild variant="outline" size="icon">
-              <Link href="https://github.com/brijr">
-                <Image
-                  src={Github}
-                  alt="github logo"
-                  className="h-[1.2rem] w-[1.2rem] "
-                />
-              </Link>
+          </Link>
+          <div className="flex items-center">
+            <Button asChild variant="link">
+              <Link href="https://github.com/brijr">GitHub</Link>
             </Button>
             <ModeToggle />
           </div>
         </div>
 
         {/* Hero text */}
-        <h1>Bridger Tower is a Designer and Developer</h1>
-        {/* General Links */}
-        <div className="grid gap-2">
-          Links:
-          {bt.links.map((link) => (
-            <a key={link.label} href={link.href}>
-              {link.label}
-            </a>
-          ))}
-        </div>
+        <h1>
+          Bridger Tower{" "}
+          <span className="text-muted-foreground">
+            (aka. <a href="https://github.com/brijr">brijr</a>)
+          </span>{" "}
+          is a Designer and Developer
+        </h1>
         <Paragraph>
           I am a designer and developer from Utah. I work as a design engineer
-          at <OutLink href="https://ampry.com">Ampry</OutLink>. I am currently
-          building{" "}
+          at <OutLink href="https://ampry.com">Ampry</OutLink>. I founded{" "}
+          <OutLink href="https://zion.surf">Zion Design</OutLink> and I am
+          currently building{" "}
           <OutLink href="https://alpinecodex.com">Alpine Codex</OutLink> and{" "}
           <OutLink href="https://9d8.dev">9d8</OutLink> to deliver next-gen
           performance marketing software.
@@ -70,6 +63,19 @@ const Intro = () => {
           thanks for visiting and feel free to reach out to me. Always looking
           to collaborate and learn from others.
         </Paragraph>
+        {/* General Links */}
+        <div className="grid gap-2">
+          {bt.links.map((link) => (
+            <a
+              className="flex group gap-1 items-center"
+              key={link.label}
+              href={link.href}
+            >
+              <ArrowRight className="w-4 h-4 -mb-px transition-all group-hover:-rotate-45" />
+              {link.label}
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );

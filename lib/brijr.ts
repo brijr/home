@@ -67,22 +67,6 @@ const bt = {
     },
   ],
 
-  // ventures and businesses
-  ventures: [
-    {
-      label: "Alpine Codex",
-      href: "https://alpinecodex.com",
-    },
-    {
-      label: "9d8",
-      href: "https://9d8.dev",
-    },
-    {
-      label: "Zion Design",
-      href: "https://zion.surf",
-    },
-  ],
-
   // Work and Resume
   work: [
     {
