@@ -8,6 +8,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import cap from "@/public/cap.svg";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bridger Tower :: Designer and Developer",
+  description:
+    "I am a designer and developer from Utah. I work as a design engineer at Ampry. I founded Zion Design and I am currently building Alpine Codex and 9d8 to deliver next-gen performance marketing software.",
+};
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -45,7 +52,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 const Nav = () => {
   return (
-    <nav className="mb-12 mt-6 lg:my-24 max-w-xl mx-auto">
+    <nav className="my-12 md:my-48 max-w-xl mx-auto">
       <div className="grid gap-6">
         <div className="flex justify-between items-center">
           <Link href="/">
