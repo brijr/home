@@ -60,7 +60,7 @@ const Nav = () => {
               className="dark:invert transition-all hover:opacity-70"
               src={cap}
               width={54}
-              height={54}
+              height={44.45}
               alt="a key cap with a b for bridger"
             ></Image>
           </Link>
