@@ -65,10 +65,18 @@ const Nav = () => {
             ></Image>
           </Link>
           <div className="flex items-center">
-            <Button className="px-2" asChild variant="link">
+            <Button
+              className="px-2 decoration-purple-400 underline-offset-2 hover:underline"
+              asChild
+              variant="link"
+            >
               <Link href="https://read.cv/brijr">Resume</Link>
             </Button>
-            <Button className="px-2" asChild variant="link">
+            <Button
+              className="px-2 decoration-purple-400 underline-offset-2 hover:underline"
+              asChild
+              variant="link"
+            >
               <Link href="https://github.com/brijr">GitHub</Link>
             </Button>
             <ModeToggle />

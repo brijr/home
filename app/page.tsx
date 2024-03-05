@@ -51,7 +51,7 @@ const Intro = () => {
           <div className="flex gap-2">
             {bt.categories.map((link) => (
               <Link
-                className="text-primary group flex items-center gap-1 decoration-purple-400 underline-offset-2 hover:underline"
+                className="flex border not-prose text-sm items-center gap-1 py-px px-2 rounded-md hover:bg-accent hover:text-foreground transition-all"
                 key={link.label}
                 href={link.href}
               >
