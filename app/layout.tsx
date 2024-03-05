@@ -52,7 +52,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 const Nav = () => {
   return (
-    <nav className="mx-auto my-12 max-w-xl md:my-48">
+    <nav className="mx-auto my-8 md:my-24 mb-24 max-w-xl md:mb-36">
       <div className="grid gap-6">
         <div className="flex items-center justify-between">
           <Link href="/">
