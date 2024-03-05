@@ -32,8 +32,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <Layout>
       <body
         className={cn(
-          "bg-background font-sans antialiased m-6",
-          fontSans.variable
+          "bg-background m-6 font-sans antialiased",
+          fontSans.variable,
         )}
       >
         <ThemeProvider
@@ -52,12 +52,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 const Nav = () => {
   return (
-    <nav className="my-12 md:my-48 max-w-xl mx-auto">
+    <nav className="mx-auto my-12 max-w-xl md:my-48">
       <div className="grid gap-6">
-        <div className="flex justify-between items-center">
+        <div className="flex items-center justify-between">
           <Link href="/">
             <Image
-              className="dark:invert transition-all hover:opacity-70"
+              className="transition-all hover:opacity-70 dark:invert"
               src={cap}
               width={54}
               height={44.45}
