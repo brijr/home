@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="max-w-xl mx-auto">
+    <main className="mx-auto max-w-xl">
       <Intro />
     </main>
   );
@@ -45,28 +45,29 @@ const Intro = () => {
             to collaborate and learn from others.
           </Paragraph>
         </div>
-        <div className="grid gap-2 text-muted-foreground">
+        <div className="text-muted-foreground grid gap-2">
           Portfolio
-          {bt.categories.map((link) => (
-            <Link
-              className="flex group gap-1 items-center text-primary hover:underline underline-offset-2 decoration-purple-400"
-              key={link.label}
-              href={link.href}
-            >
-              <ArrowRight className="w-4 h-4 -mb-px transition-all group-hover:-rotate-45" />
-              {link.label}
-            </Link>
-          ))}
+          <div className="flex gap-2">
+            {bt.categories.map((link) => (
+              <Link
+                className="text-primary group flex items-center gap-1 decoration-purple-400 underline-offset-2 hover:underline"
+                key={link.label}
+                href={link.href}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="grid gap-2 text-muted-foreground">
+        <div className="text-muted-foreground grid gap-2">
           More
           {bt.links.map((link) => (
             <a
-              className="flex group gap-1 items-center text-primary hover:underline underline-offset-2 decoration-purple-400"
+              className="text-primary group flex items-center gap-1 decoration-purple-400 underline-offset-2 hover:underline"
               key={link.label}
               href={link.href}
             >
-              <ArrowRight className="w-4 h-4 -mb-px transition-all group-hover:-rotate-45" />
+              <ArrowRight className="-mb-px h-4 w-4 transition-all group-hover:-rotate-45" />
               {link.label}
             </a>
           ))}
@@ -85,7 +86,7 @@ const OutLink = ({
 }) => {
   return (
     <a
-      className="hover:text-foreground transition-all underline underline-offset-2 decoration-purple-400"
+      className="hover:text-foreground underline decoration-purple-400 underline-offset-2 transition-all"
       href={href}
       target="_blank"
       rel="noopener noreferrer"
