@@ -33,7 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={cn(
           "bg-background m-6 font-sans antialiased",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
         <ThemeProvider
