@@ -70,7 +70,7 @@ const Nav = () => {
               asChild
               variant="link"
             >
-              <Link href="https://read.cv/brijr">Resume</Link>
+              <Link href="https://resume.bridger.to/">Resume</Link>
             </Button>
             <Button
               className="px-2 decoration-purple-400 underline-offset-2 hover:underline"
