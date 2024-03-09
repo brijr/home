@@ -64,7 +64,7 @@ const Intro = () => {
           More
           {bt.links.map((link) => (
             <a
-              className="text-primary group flex items-center gap-1 decoration-purple-400 underline-offset-2 hover:underline"
+              className="text-primary group flex items-center gap-1 hover:text-foreground transition-all"
               key={link.label}
               href={link.href}
             >
@@ -87,7 +87,7 @@ const OutLink = ({
 }) => {
   return (
     <a
-      className="hover:text-foreground underline decoration-purple-400 underline-offset-2 transition-all"
+      className="hover:text-foreground underline decoration-red-300 underline-offset-2 transition-all"
       href={href}
       target="_blank"
       rel="noopener noreferrer"
