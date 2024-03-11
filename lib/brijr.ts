@@ -117,6 +117,22 @@ const bt = {
     },
   ],
 
+  // Work and Resume
+  ventures: [
+    {
+      label: "Alpine Codex",
+      href: "https://alpinecodex.com",
+    },
+    {
+      label: "9d8",
+      href: "https://9d8.dev",
+    },
+    {
+      label: "Zion Design",
+      href: "https://zion.surf",
+    },
+  ],
+
   // websites
   websites: [
     {
