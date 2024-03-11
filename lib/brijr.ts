@@ -34,6 +34,8 @@ const bt = {
     { label: "Websites", href: "/websites" },
     { label: "Brands", href: "/brands" },
     { label: "Open Source", href: "/os" },
+    { label: "Work", href: "/work" },
+    { label: "Ventures", href: "/ventures" },
   ],
 
   // Software Projects
