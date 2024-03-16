@@ -51,7 +51,7 @@ const Intro = () => {
           <div className="flex gap-2">
             {bt.categories.map((link) => (
               <Link
-                className="flex border not-prose text-sm items-center gap-1 py-px px-2 rounded-md hover:bg-accent hover:text-foreground transition-all"
+                className="not-prose hover:bg-accent hover:text-foreground flex items-center gap-1 rounded-md border px-2 py-px text-sm transition-all"
                 key={link.label}
                 href={link.href}
               >
@@ -64,7 +64,7 @@ const Intro = () => {
           More
           {bt.links.map((link) => (
             <a
-              className="text-primary group flex items-center gap-1 hover:text-foreground transition-all"
+              className="text-primary hover:text-foreground group flex items-center gap-1 transition-all"
               key={link.label}
               href={link.href}
             >

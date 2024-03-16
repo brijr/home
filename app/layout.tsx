@@ -34,7 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={cn(
           "bg-background m-6 font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <ThemeProvider
@@ -54,7 +54,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 const Nav = () => {
   return (
-    <nav className="mx-auto my-8 md:my-24 mb-24 max-w-xl md:mb-36">
+    <nav className="mx-auto my-8 mb-24 max-w-xl md:my-24 md:mb-36">
       <div className="grid gap-6">
         <div className="flex items-center justify-between">
           <Link href="/">
