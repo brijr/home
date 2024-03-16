@@ -9,6 +9,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import cap from "@/public/cap.svg";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Bridger Tower :: Designer and Developer",
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <Nav />
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </Layout>
