@@ -73,7 +73,7 @@ const Nav = () => {
             >
               GitHub
             </a>
-<a
+            <a
               className="text-muted-foreground hover:text-foreground transition-all"
               href="https://twitter.com/bridgertower"
               target="_blank"
