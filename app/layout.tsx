@@ -68,17 +68,17 @@ const Nav = () => {
           <div className="flex text-base items-center gap-4">
             <a
               className="text-muted-foreground hover:text-foreground transition-all"
-              href="https://resume.bridger.to/"
-              target="_blank"
-            >
-              Resume
-            </a>
-            <a
-              className="text-muted-foreground hover:text-foreground transition-all"
               href="https://github.com/brijr"
               target="_blank"
             >
               GitHub
+            </a>
+<a
+              className="text-muted-foreground hover:text-foreground transition-all"
+              href="https://twitter.com/bridgertower"
+              target="_blank"
+            >
+              Twitter
             </a>
             <ModeToggle />
           </div>
