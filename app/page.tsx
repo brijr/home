@@ -48,7 +48,7 @@ const Intro = () => {
         </div>
         <div className="text-muted-foreground grid gap-2">
           Portfolio
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             {bt.categories.map((link) => (
               <Link
                 className="not-prose hover:bg-accent hover:text-foreground flex items-center gap-1 rounded-md border px-2 py-px text-sm transition-all"
