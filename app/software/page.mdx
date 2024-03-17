@@ -1,0 +1,14 @@
+import bt from "@/lib/brijr";
+
+# Software
+
+## Software I have helped design and develop
+
+<div className="not-prose grid gap-2 mt-12">
+  {bt.projects.map((project) => (
+    <div className="md:flex justify-between" key={project.label}>
+      <a href={project.href}>{project.label}</a>
+      <p className="text-muted-foreground">{project.desc}</p>
+    </div>
+  ))}
+</div>

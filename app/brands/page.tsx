@@ -2,7 +2,7 @@ import bt from "@/lib/brijr";
 
 export default function Page() {
   return (
-    <main className="max-w-xl mx-auto ">
+    <main className="mx-auto max-w-xl ">
       <p>coming soon ...</p>
       {/* <h1>Software</h1>
       {bt.brands.map((project) => (

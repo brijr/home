@@ -1,12 +1,11 @@
 import "./globals.css";
 import { Manrope as FontSans } from "next/font/google";
 import { ReactNode } from "react";
-import { Layout } from "@/components/craft";
+import { Layout, Main } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import cap from "@/public/cap.svg";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
@@ -33,8 +32,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <Layout>
       <body
         className={cn(
-          "bg-background m-6 font-sans antialiased",
-          fontSans.variable,
+          "bg-background m-6 font-sans text-lg antialiased",
+          fontSans.variable
         )}
       >
         <ThemeProvider
@@ -44,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
         >
           <Nav />
-          {children}
+          <Main className="mx-auto max-w-xl">{children}</Main>
           <Analytics />
         </ThemeProvider>
       </body>
@@ -66,21 +65,21 @@ const Nav = () => {
               alt="a key cap with a b for bridger"
             ></Image>
           </Link>
-          <div className="flex items-center">
-            <Button
-              className="px-2 decoration-red-300 underline-offset-2 hover:underline"
-              asChild
-              variant="link"
+          <div className="flex text-base items-center gap-4">
+            <a
+              className="text-muted-foreground hover:text-foreground transition-all"
+              href="https://resume.bridger.to/"
+              target="_blank"
             >
-              <Link href="https://resume.bridger.to/">Resume</Link>
-            </Button>
-            <Button
-              className="px-2 decoration-red-300 underline-offset-2 hover:underline"
-              asChild
-              variant="link"
+              Resume
+            </a>
+            <a
+              className="text-muted-foreground hover:text-foreground transition-all"
+              href="https://github.com/brijr"
+              target="_blank"
             >
-              <Link href="https://github.com/brijr">GitHub</Link>
-            </Button>
+              GitHub
+            </a>
             <ModeToggle />
           </div>
         </div>
