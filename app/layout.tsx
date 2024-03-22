@@ -32,7 +32,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <Layout>
       <body
         className={cn(
-          "bg-background m-6 font-sans text-lg antialiased",
+          "bg-background m-6 font-sans text-lg antialiased no-scrollbar",
           fontSans.variable
         )}
       >
@@ -44,6 +44,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <Nav />
           <Main className="mx-auto max-w-xl">{children}</Main>
+          <Footer />
           <Analytics />
         </ThemeProvider>
       </body>
@@ -85,5 +86,13 @@ const Nav = () => {
         </div>
       </div>
     </nav>
+  );
+};
+
+export const Footer = () => {
+  return (
+    <footer className="mx-auto mt-8 max-w-xl md:mt-24 mb-12">
+      <p className="text-muted-foreground text-sm">© Bridger Tower, 2024</p>
+    </footer>
   );
 };
