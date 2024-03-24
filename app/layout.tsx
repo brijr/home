@@ -89,7 +89,7 @@ const Nav = () => {
   );
 };
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="mx-auto mt-8 max-w-xl md:mt-24 mb-12">
       <p className="text-muted-foreground text-sm">© Bridger Tower, 2024</p>
