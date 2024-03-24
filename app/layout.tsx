@@ -44,7 +44,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
         >
           <Nav />
-          <Main className="mx-auto max-w-xl">{children}</Main>
+          <Main className="mx-auto max-w-xl fade-in-2">{children}</Main>
           <Footer />
           <Analytics />
         </ThemeProvider>
@@ -55,7 +55,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 const Nav = () => {
   return (
-    <nav className="mx-auto my-8 mb-24 max-w-xl md:my-24 md:mb-36">
+    <nav className="mx-auto fade-in my-8 mb-24 max-w-xl md:my-24 md:mb-36">
       <div className="grid gap-6">
         <div className="flex items-center justify-between">
           <Link href="/">

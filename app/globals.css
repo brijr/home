@@ -75,3 +75,56 @@
         /* Firefox */
     }
 }
+
+/* animations */
+
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.fade-in-2 {
+    -webkit-animation: fade-in-2 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+    animation: fade-in-2 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+}
+
+@-webkit-keyframes fade-in-2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
