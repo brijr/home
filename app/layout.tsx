@@ -7,6 +7,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import Link from "next/link";
 import Image from "next/image";
 import cap from "@/public/cap.svg";
+import logo from "@/public/logo.svg";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -59,11 +60,11 @@ const Nav = () => {
         <div className="flex items-center justify-between">
           <Link href="/">
             <Image
-              className="transition-all hover:opacity-70 dark:invert"
-              src={cap}
+              className="transition-all hover:opacity-70 dark:invert-0"
+              src={logo}
               width={54}
-              height={44.45}
-              alt="a key cap with a b for bridger"
+              height={43.97}
+              alt="bridger tower logo"
             ></Image>
           </Link>
           <div className="flex text-base items-center gap-4">
