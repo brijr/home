@@ -61,7 +61,7 @@ const Nav = () => {
           <Link href="/">
             <Image
               priority
-              className="transition-all hover:opacity-70 dark:invert-0"
+              className="invert transition-all hover:opacity-70 dark:invert-0"
               src={logo}
               width={54}
               height={43.97}
