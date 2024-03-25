@@ -26,7 +26,7 @@ const bt = {
     { label: "components.bridger.to", href: "https://components.bridger.to" },
     { label: "product.bridger.to", href: "https://product.bridger.to" },
     { label: "resume.bridger.to", href: "https://resume.bridger.to" },
-    { label: "design.bridger.to", href: "https://zion.surf" },
+    { label: "nextutah.org", href: "https://nextutah.org" },
   ],
 
   categories: [
