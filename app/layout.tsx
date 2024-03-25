@@ -33,8 +33,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <Layout>
       <body
         className={cn(
-          "bg-background m-6 font-sans text-lg antialiased no-scrollbar",
-          fontSans.variable
+          "bg-background no-scrollbar m-6 font-sans text-lg antialiased",
+          fontSans.variable,
         )}
       >
         <ThemeProvider
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
         >
           <Nav />
-          <Main className="mx-auto max-w-xl fade-in-2">{children}</Main>
+          <Main className="fade-in-2 mx-auto max-w-xl">{children}</Main>
           <Footer />
           <Analytics />
         </ThemeProvider>
@@ -55,11 +55,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 const Nav = () => {
   return (
-    <nav className="mx-auto fade-in my-8 mb-24 max-w-xl md:my-24 md:mb-36">
+    <nav className="fade-in mx-auto my-8 mb-24 max-w-xl md:my-24 md:mb-36">
       <div className="grid gap-6">
         <div className="flex items-center justify-between">
           <Link href="/">
             <Image
+              priority
               className="transition-all hover:opacity-70 dark:invert-0"
               src={logo}
               width={54}
@@ -67,7 +68,7 @@ const Nav = () => {
               alt="bridger tower logo"
             ></Image>
           </Link>
-          <div className="flex text-base items-center gap-4">
+          <div className="flex items-center gap-4 text-base">
             <a
               className="text-muted-foreground hover:text-foreground transition-all"
               href="https://github.com/brijr"
@@ -92,7 +93,7 @@ const Nav = () => {
 
 const Footer = () => {
   return (
-    <footer className="mx-auto mt-8 max-w-xl md:mt-24 mb-12">
+    <footer className="mx-auto mb-12 mt-8 max-w-xl md:mt-24">
       <p className="text-muted-foreground text-sm">© Bridger Tower, 2024</p>
     </footer>
   );
