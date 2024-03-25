@@ -93,7 +93,7 @@ const Nav = () => {
 
 const Footer = () => {
   return (
-    <footer className="mx-auto mb-12 mt-8 max-w-xl md:mt-24">
+    <footer className="fade-in-3 mx-auto mb-12 mt-8 max-w-xl md:mt-24">
       <p className="text-muted-foreground text-sm">© Bridger Tower, 2024</p>
     </footer>
   );
