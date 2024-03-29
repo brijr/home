@@ -1,4 +1,4 @@
-import { PortfolioLinks } from "@/app/portfolio-links";
+import { PortfolioLinks } from "./portfolio-links";
 import { OutLink } from "@/components/out-link";
 import bt from "@/lib/brijr.ts";
 
@@ -22,15 +22,9 @@ Thanks for visiting and feel free to reach out to me. Always looking to collabor
 
 <div className="grid gap-3 pt-2">
   {bt.links.map((project) => (
-
-  <OutLink
-    className="md:flex justify-between"
-    href={project.href}
-    key={project.label}
-    desc={project.desc}
-  >
-    {project.label}
-  </OutLink>
+    <OutLink href={project.href} key={project.label} desc={project.desc}>
+      {project.label}
+    </OutLink>
   ))}
 </div>
 
