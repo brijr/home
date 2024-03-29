@@ -76,13 +76,6 @@ const Nav = () => {
             >
               GitHub
             </a>
-            <a
-              className="text-muted-foreground hover:text-foreground transition-all"
-              href="https://twitter.com/bridgertower"
-              target="_blank"
-            >
-              Twitter
-            </a>
             <ModeToggle />
           </div>
         </div>
@@ -94,7 +87,14 @@ const Nav = () => {
 const Footer = () => {
   return (
     <footer className="fade-in-3 mx-auto mb-12 mt-8 max-w-xl md:mt-24">
-      <p className="text-muted-foreground text-sm">© Bridger Tower, 2024</p>
+      <a
+        href="https://twitter.com/bridgertower"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-muted-foreground text-sm"
+      >
+        © Bridger Tower, 2024
+      </a>
     </footer>
   );
 };
