@@ -26,12 +26,12 @@ const bt = {
     {
       label: "components.bridger.to",
       href: "https://components.bridger.to",
-      desc: "Open Source Next.js component library for building websites",
+      desc: "OS Next.js components for websites",
     },
     {
       label: "product.bridger.to",
       href: "https://product.bridger.to",
-      desc: "More details on my Product Design and Development work",
+      desc: "Product Design and Development work",
     },
     {
       label: "resume.bridger.to",
@@ -59,7 +59,7 @@ const bt = {
     {
       label: "Wavefinder",
       href: "https://wavefinder.io",
-      desc: "Message testing at scale using Artificial Intelligence.",
+      desc: "Message testing at scale using AI.",
     },
     {
       label: "BuilderKit",
@@ -69,7 +69,7 @@ const bt = {
     {
       label: "Outr.io",
       href: "/software/outr",
-      desc: "Sales outreach and follow-up Artificial Intelligence.",
+      desc: "Automated sales outreach and follow-up.",
     },
     {
       label: "Router.so",
