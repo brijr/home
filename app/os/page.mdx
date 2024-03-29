@@ -1,14 +1,14 @@
 import bt from "@/lib/brijr";
+import { OutLink } from "@/components/out-link";
 
 # Open Source
 
 ## Open Source projects I created and/or maintain.
 
-<div className="not-prose grid gap-2 mt-12">
+<div className="not-prose grid gap-3 mt-12">
   {bt.os.map((project) => (
-    <div className="md:flex justify-between" key={project.label}>
-      <a href={project.href}>{project.label}</a>
-      <p className="text-muted-foreground">{project.desc}</p>
-    </div>
+    <OutLink href={project.href} key={project.label} desc={project.desc}>
+      {project.label}
+    </OutLink>
   ))}
 </div>

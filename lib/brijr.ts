@@ -1,25 +1,11 @@
 const bt = {
-  socials: [
-    {
-      label: "Resume",
-      href: "https://read.cv/brijr",
-    },
-    {
-      label: "GitHub",
-      href: "https://github.com/brijr",
-    },
-    {
-      label: "X (Twitter)",
-      href: "https://twitter.com/bridgertower",
-    },
-    {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/in/brdgr",
-    },
-    {
-      label: "YouTube",
-      href: "https://www.youtube.com/@bridgertower",
-    },
+  categories: [
+    { label: "Software", href: "/software" },
+    { label: "Open Source", href: "/os" },
+    { label: "Websites", href: "/websites" },
+    { label: "Brands", href: "/brands" },
+    { label: "Work", href: "/work" },
+    { label: "Ventures", href: "/ventures" },
   ],
 
   links: [
@@ -43,15 +29,6 @@ const bt = {
       href: "https://nextutah.org",
       desc: "Next.js Utah Dev Community",
     },
-  ],
-
-  categories: [
-    { label: "Software", href: "/software" },
-    { label: "Open Source", href: "/os" },
-    { label: "Websites", href: "/websites" },
-    { label: "Brands", href: "/brands" },
-    { label: "Work", href: "/work" },
-    { label: "Ventures", href: "/ventures" },
   ],
 
   // Software Projects
@@ -81,29 +58,39 @@ const bt = {
   // open source projects
   os: [
     {
-      label: "components.bridger.to",
-      href: "https://components.bridger.to",
+      label: "brijr/components",
+      href: "https://github.com/brijr/components",
       desc: "Next.js components for building websites.",
+    },
+    {
+      label: "brijr/craft",
+      href: "https://github.com/brijr/craft",
+      desc: "Opinionated Next.js design system for rapid building",
     },
     {
       label: "Fjord",
       href: "https://fjord.dev",
-      desc: "Next.js Headless WordPress template.",
-    },
-    {
-      label: "Craft",
-      href: "https://github.com/brijr/craft",
-      desc: "Opinionated Next.js design system for rapid building.",
+      desc: "Next.js Headless WordPress template",
     },
     {
       label: "WindPress",
       href: "https://github.com/alpinecodex/windpress",
-      desc: "WordPress template for speed and performance.",
+      desc: "WordPress template for speed and performance",
+    },
+    {
+      label: "MDX Starter",
+      href: "https://github.com/brijr/mdx-starter",
+      desc: "Next.js and MDX starter template",
     },
     {
       label: "9d8 Starter",
       href: "https://github.com/9d8dev/starter",
-      desc: "Next.js starter template for 9D8 projects.",
+      desc: "Next.js starter template for 9d8 projects",
+    },
+    {
+      label: "brijr/home",
+      href: "https://github.com/brijr/home",
+      desc: "Source code for this website!",
     },
   ],
 
@@ -112,26 +99,32 @@ const bt = {
     {
       label: "Software Developer at Alpine Codex",
       href: "https://alpinecodex.com",
+      desc: "Developing innovative software solutions with a focus on performance and user experience.",
     },
     {
       label: "Software Developer at 9D8",
       href: "https://9d8.dev",
+      desc: "Crafting modern web applications and services with cutting-edge technologies.",
     },
     {
       label: "Software Developer at Ampry",
       href: "https://ampry.com",
+      desc: "Building and optimizing web platforms to enhance user engagement and conversion.",
     },
     {
       label: "Web Developer at Tackle.io",
       href: "https://tackle.io",
+      desc: "Implementing scalable web architectures and collaborating on cloud-based solutions.",
     },
     {
       label: "Product Designer at Ampry",
       href: "https://ampry.com",
+      desc: "Designing intuitive user interfaces and experiences, driving product strategy and vision.",
     },
     {
       label: "Designer at Zion Design",
       href: "https://zion.surf",
+      desc: "Creating visually compelling designs and branding materials for a diverse client base.",
     },
   ],
 
@@ -140,14 +133,17 @@ const bt = {
     {
       label: "Alpine Codex",
       href: "https://alpinecodex.com",
+      desc: "Innovative software solutions with a focus on performance and user experience.",
     },
     {
       label: "9d8",
       href: "https://9d8.dev",
+      desc: "Modern web applications and services using cutting-edge technologies.",
     },
     {
       label: "Zion Design",
       href: "https://zion.surf",
+      desc: "Visually compelling designs and branding materials for a diverse client base.",
     },
   ],
 
@@ -156,46 +152,62 @@ const bt = {
     {
       label: "internetservices.com",
       href: "https://internetservices.vercel.app",
+      desc: "A platform offering diverse internet services and solutions.",
     },
     {
       label: "ampry.com",
       href: "https://ampry.com",
+      desc: "Optimizing web platforms for enhanced user engagement and conversion.",
     },
     {
       label: "wavefinder.io",
       href: "https://wavefinder.io",
+      desc: "A tool for surfers to find the best waves and surf conditions.",
     },
     {
       label: "builderkit.io",
       href: "https://builderkit.io",
+      desc: "Providing developers with tools and kits for building web applications.",
     },
     {
       label: "outr.io",
       href: "https://outr.io",
+      desc: "Automated cold outreach and follow-up platform for sales teams.",
+    },
+    {
+      label: "asap.engineering",
+      href: "https://asap.engineering",
+      desc: "Engineering studio for software.",
     },
     {
       label: "pandium.com",
       href: "https://pandium.com",
+      desc: "Integrations and automations for SaaS applications to streamline business processes.",
     },
     {
       label: "travelmellow.com",
       href: "https://travelmellow.com",
+      desc: "A travel platform for planning and booking serene getaways.",
     },
     {
       label: "sondrmarketing.com",
       href: "https://sondrmarketing.com",
+      desc: "A marketing agency specializing in creating compelling designs and branding strategies.",
     },
     {
       label: "allveteran.com",
       href: "https://allveteran.com",
+      desc: "A resource and community platform dedicated to veterans.",
     },
     {
       label: "autobyte.dev",
       href: "https://autobyte.dev",
+      desc: "Automotive technology solutions and development services.",
     },
     {
       label: "modelofconfidence.com",
       href: "https://modelofconfidence.com",
+      desc: "A platform promoting self-confidence and personal growth.",
     },
   ],
 };

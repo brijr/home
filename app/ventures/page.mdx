@@ -1,16 +1,14 @@
 import bt from "@/lib/brijr";
+import { OutLink } from "@/components/out-link";
 
 # Ventures
 
 ## Current and past ventures
 
-<div className="grid gap-2 mt-12">
+<div className="not-prose grid gap-3 mt-12">
   {bt.ventures.map((project) => (
-    <div
-      className="flex justify-between text-muted-foreground"
-      key={project.label}
-    >
-      <a href={project.href}>{project.label}</a>
-    </div>
+    <OutLink href={project.href} key={project.label} desc={project.desc}>
+      {project.label}
+    </OutLink>
   ))}
 </div>
