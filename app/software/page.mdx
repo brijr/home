@@ -1,5 +1,5 @@
 import bt from "@/lib/brijr";
-import { OutLink } from "@/components/out-link";
+import { InLink } from "@/components/in-link";
 
 # Software
 
@@ -7,8 +7,8 @@ import { OutLink } from "@/components/out-link";
 
 <div className="not-prose grid gap-3 mt-12">
   {bt.projects.map((project) => (
-    <OutLink href={project.href} key={project.label} desc={project.desc}>
+    <InLink href={project.href} key={project.label} desc={project.desc}>
       {project.label}
-    </OutLink>
+    </InLink>
   ))}
 </div>

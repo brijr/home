@@ -57,11 +57,6 @@ const bt = {
   // Software Projects
   projects: [
     {
-      label: "Router.so",
-      href: "https://router.so",
-      desc: "Simple backend for lead capture and routing.",
-    },
-    {
       label: "Wavefinder",
       href: "https://wavefinder.io",
       desc: "Message testing at scale using Artificial Intelligence.",
@@ -73,8 +68,13 @@ const bt = {
     },
     {
       label: "Outr.io",
-      href: "https://outr.io",
+      href: "/software/outr",
       desc: "Sales outreach and follow-up Artificial Intelligence.",
+    },
+    {
+      label: "Router.so",
+      href: "https://router.so",
+      desc: "Simple backend for lead capture and routing.",
     },
   ],
 
