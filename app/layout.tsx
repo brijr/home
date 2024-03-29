@@ -34,7 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={cn(
           "bg-background no-scrollbar m-6 font-sans text-lg antialiased",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
         <ThemeProvider
