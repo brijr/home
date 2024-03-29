@@ -1,4 +1,5 @@
 import bt from "@/lib/brijr";
+import { OutLink } from "@/components/out-link";
 
 # Software
 
@@ -6,9 +7,13 @@ import bt from "@/lib/brijr";
 
 <div className="not-prose grid gap-2 mt-12">
   {bt.projects.map((project) => (
-    <div className="md:flex justify-between" key={project.label}>
-      <a href={project.href}>{project.label}</a>
-      <p className="text-muted-foreground">{project.desc}</p>
-    </div>
+    <OutLink
+      className="md:flex justify-between"
+      href={project.href}
+      key={project.label}
+      desc={project.desc}
+    >
+      {project.label}
+    </OutLink>
   ))}
 </div>

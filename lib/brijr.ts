@@ -23,10 +23,26 @@ const bt = {
   ],
 
   links: [
-    { label: "components.bridger.to", href: "https://components.bridger.to" },
-    { label: "product.bridger.to", href: "https://product.bridger.to" },
-    { label: "resume.bridger.to", href: "https://resume.bridger.to" },
-    { label: "nextutah.org", href: "https://nextutah.org" },
+    {
+      label: "components.bridger.to",
+      href: "https://components.bridger.to",
+      desc: "Open Source Next.js component library for building websites",
+    },
+    {
+      label: "product.bridger.to",
+      href: "https://product.bridger.to",
+      desc: "More details on my Product Design and Development work",
+    },
+    {
+      label: "resume.bridger.to",
+      href: "https://resume.bridger.to",
+      desc: "My resume and work experience",
+    },
+    {
+      label: "nextutah.org",
+      href: "https://nextutah.org",
+      desc: "Next.js Utah Dev Community",
+    },
   ],
 
   categories: [
