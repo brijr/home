@@ -5,14 +5,9 @@ import { OutLink } from "@/components/out-link";
 
 ## Software I have helped design and develop
 
-<div className="not-prose grid gap-2 mt-12">
+<div className="not-prose grid gap-3 mt-12">
   {bt.projects.map((project) => (
-    <OutLink
-      className="md:flex justify-between"
-      href={project.href}
-      key={project.label}
-      desc={project.desc}
-    >
+    <OutLink href={project.href} key={project.label} desc={project.desc}>
       {project.label}
     </OutLink>
   ))}
