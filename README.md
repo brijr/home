@@ -1,6 +1,8 @@
 # Portfolio of Bridger
 
-Hello! This is my perosnal website. I am a design engineer and I create brands, websites, and software.
+🔗 [bridger.to](https://bridger.to)
+
+Hello! This is the code for my perosnal website. I am a design engineer and I create brands, websites, and software.
 
 ## Website Tech Stack
 
