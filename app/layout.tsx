@@ -32,7 +32,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <Layout>
       <body
         className={cn(
-          "no-scrollbar m-6 bg-background font-sans text-lg antialiased selection:bg-indigo-500 selection:text-indigo-100",
+          "m-6 bg-background font-sans text-lg antialiased selection:bg-indigo-500 selection:text-indigo-100",
           fontSans.variable,
         )}
       >
