@@ -33,8 +33,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <Layout>
       <body
         className={cn(
-          "bg-background no-scrollbar m-6 font-sans text-lg antialiased",
-          fontSans.variable
+          "no-scrollbar m-6 bg-background font-sans text-lg antialiased",
+          fontSans.variable,
         )}
       >
         <ThemeProvider
@@ -55,7 +55,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 const Nav = () => {
   return (
-    <nav className="fade-in mx-auto my-8 mb-24 max-w-xl md:my-24 md:mb-36">
+    <nav className="mx-auto my-8 mb-24 max-w-xl fade-in md:my-24 md:mb-36">
       <div className="grid gap-6">
         <div className="flex items-center justify-between">
           <Link href="/">
@@ -70,7 +70,7 @@ const Nav = () => {
           </Link>
           <div className="flex items-center gap-4 text-base">
             <a
-              className="text-muted-foreground hover:text-foreground transition-all"
+              className="text-muted-foreground transition-all hover:text-foreground"
               href="https://github.com/brijr"
               target="_blank"
             >
@@ -91,7 +91,7 @@ const Footer = () => {
         href="https://twitter.com/bridgertower"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-muted-foreground text-sm"
+        className="text-sm text-muted-foreground"
       >
         © Bridger Tower, 2024
       </a>

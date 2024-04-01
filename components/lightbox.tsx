@@ -22,7 +22,7 @@ const LightboxImage = ({
     <>
       <div className="my-4" onClick={() => setIsOpen(true)}>
         <Image
-          className="hover:cursor-zoom-in transition-all hover:opacity-90 border rounded-lg"
+          className="rounded-lg border transition-all hover:cursor-zoom-in hover:opacity-90"
           src={src}
           alt={alt}
           width={width || 576}
@@ -30,7 +30,7 @@ const LightboxImage = ({
           placeholder="blur"
         />
         {caption && (
-          <p className="text-center text-xs text-muted-foreground not-prose -mt-4">
+          <p className="not-prose -mt-4 text-center text-xs text-muted-foreground">
             {caption}
           </p>
         )}

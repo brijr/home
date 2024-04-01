@@ -38,19 +38,19 @@ const Main = ({ children, className, id }: MainProps) => {
     <main
       className={cn(
         // General Prose
-        "prose prose-neutral prose:font-sans dark:prose-invert max-w-none",
+        "prose:font-sans prose prose-neutral max-w-none dark:prose-invert",
         // Prose Headings
-        "prose-h1:text-foreground prose-h2:text-foreground prose-h1:mt-0 sm:prose-h1:mt-0 prose-h2:mt-0 sm:prose-h2:mt-0 prose-headings:font-semibold sm:prose-headings:mt-12 prose-headings:mt-8 prose-headings:mb-2 prose-headings:text-lg prose-headings:text-primary",
+        "prose-headings:mb-2 prose-headings:mt-8 prose-headings:text-lg prose-headings:font-semibold prose-headings:text-primary prose-h1:mt-0 prose-h1:text-foreground prose-h2:mt-0 prose-h2:text-foreground sm:prose-headings:mt-12 sm:prose-h1:mt-0 sm:prose-h2:mt-0",
         // Prose Paragraphs
         "prose-p:mb-0",
         // Prose Strong
         "prose-strong:font-semibold",
         // Inline Links
-        "prose-a:border-b prose-a:no-underline prose-a:transition-all prose-a:text-muted-foreground hover:prose-a:text-primary",
+        "prose-a:border-b prose-a:text-muted-foreground prose-a:no-underline prose-a:transition-all hover:prose-a:text-primary",
         // Blockquotes
         "prose-blockquote:not-italic",
-        "sm:pb-24 pb-12",
-        className
+        "pb-12 sm:pb-24",
+        className,
       )}
       id={id}
     >
@@ -101,14 +101,14 @@ const Article = ({ children, className, id }: ArticleProps) => {
     <article
       className={cn(
         // General Prose
-        "prose prose-neutral prose:font-sans dark:prose-invert xl:prose-lg",
+        "prose:font-sans prose prose-neutral dark:prose-invert xl:prose-lg",
         // Prose Headings
         "prose-headings:font-normal",
         // Inline Links
-        "prose-a:underline prose-a:underline-offset-2 prose-a:decoration-primary hover:prose-a:opacity-80 prose-a:transition-all hover:prose-a:underline-offset-4 prose-a:text-primary",
+        "prose-a:text-primary prose-a:underline prose-a:decoration-primary prose-a:underline-offset-2 prose-a:transition-all hover:prose-a:underline-offset-4 hover:prose-a:opacity-80",
         // Blockquotes
         "prose-blockquote:not-italic",
-        className
+        className,
       )}
       id={id}
     >
