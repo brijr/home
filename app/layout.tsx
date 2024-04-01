@@ -6,7 +6,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 import Link from "next/link";
 import Image from "next/image";
-import cap from "@/public/cap.svg";
 import logo from "@/public/logo.svg";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
