@@ -3,6 +3,7 @@ import Image, { ImageProps } from "next/image";
 import Link from "next/link";
 import { Breadcrumb } from "./components/breadcrumb";
 import { Posts } from "./components/posts";
+import Logos from "@/app/logos";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -26,6 +27,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     Breadcrumb,
     Posts,
+    Logos,
     ...components,
   };
 }

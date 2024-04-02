@@ -11,6 +11,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bridger.to"),
   title: "Bridger Tower :: Designer and Developer",
   description:
     "I am a designer and developer from Utah. I work as a design engineer at Ampry. I founded Zion Design and I am currently building Alpine Codex and 9d8 to deliver next-gen performance marketing software.",
@@ -33,7 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={cn(
           "m-6 bg-background font-sans text-lg antialiased selection:bg-indigo-500 selection:text-indigo-100",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
         <ThemeProvider

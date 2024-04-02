@@ -5,7 +5,7 @@ const bt = {
     { label: "Websites", href: "/websites" },
     { label: "Brands", href: "/brands" },
     { label: "Work", href: "/work" },
-    { label: "Ventures", href: "/ventures" },
+    { label: "Posts", href: "/posts" },
   ],
 
   links: [
