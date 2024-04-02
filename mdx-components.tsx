@@ -1,30 +1,29 @@
 import type { MDXComponents } from "mdx/types";
 import Image, { ImageProps } from "next/image";
 import Link from "next/link";
+import { Breadcrumb } from "./components/breadcrumb";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    Img: (props) => (
-      <Image
-        sizes="100vw"
-        style={{ width: "100%", height: "auto" }}
-        {...(props as ImageProps)}
-      />
-    ),
+    Image: (props) => <Image {...(props as ImageProps)} />,
     Date: ({ children }) => (
-      <span className="text-sm">
-        {new Date(children).toLocaleDateString("en-US", {
-          year: "numeric",
-          month: "short",
-          day: "numeric",
-        })}
-      </span>
+      <div className="text-sm mt-12 not-prose flex items-center justify-between gap-4 flex-wrap">
+        <p>Written by Bridger Tower</p>
+        <p>
+          {new Date(children).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          })}
+        </p>
+      </div>
     ),
     Link: (props) => (
-      <Link href={props.link} className="not-prose underline" {...props}>
+      <Link href={props.link} {...props}>
         {props.children}
       </Link>
     ),
+    Breadcrumb,
     ...components,
   };
 }

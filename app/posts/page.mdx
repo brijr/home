@@ -1,6 +1,8 @@
 import LightboxImage from "@/components/lightbox";
 import { OutLink } from "@/components/out-link";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { DateLink } from "@/components/date-link";
+import posts from "@/posts.json";
 
 import One from "@/public/outr/1.jpeg";
 import Two from "@/public/outr/2.jpeg";
@@ -14,4 +16,15 @@ import Zero from "@/public/outr/0.jpeg";
 
 ## Posts written by Bridger Tower
 
-Coming soon...
+<div className="mt-12">
+  {posts
+    .sort((a, b) => b.year.localeCompare(a.year))
+    .map((post) => (
+      <DateLink
+        key={post.path}
+        name={post.name}
+        href={post.path}
+        year={post.year}
+      />
+    ))}
+</div>

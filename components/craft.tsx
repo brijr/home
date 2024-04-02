@@ -21,7 +21,7 @@ const Layout = ({ children, className }: LayoutProps) => {
       suppressHydrationWarning
       className={cn(
         "no-scrollbar scroll-smooth antialiased focus:scroll-auto",
-        className,
+        className
       )}
     >
       {children}
@@ -53,7 +53,7 @@ const Main = ({ children, className, id }: MainProps) => {
         // Blockquotes
         "prose-blockquote:not-italic",
         "pb-12 sm:pb-24",
-        className,
+        className
       )}
       id={id}
     >
@@ -111,7 +111,7 @@ const Article = ({ children, className, id }: ArticleProps) => {
         "prose-a:text-primary prose-a:underline prose-a:decoration-primary prose-a:underline-offset-2 prose-a:transition-all hover:prose-a:underline-offset-4 hover:prose-a:opacity-80",
         // Blockquotes
         "prose-blockquote:not-italic",
-        className,
+        className
       )}
       id={id}
     >
