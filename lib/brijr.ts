@@ -53,6 +53,11 @@ const bt = {
       href: "https://router.so",
       desc: "Simple backend for lead capture and routing.",
     },
+    {
+      label: "DocsAI",
+      href: "https://docsai.org",
+      desc: "The fastest way to generate SEO-rich articles.",
+    },
   ],
 
   // open source projects
