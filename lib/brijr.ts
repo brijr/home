@@ -56,7 +56,7 @@ const bt = {
     {
       label: "DocsAI",
       href: "https://docsai.org",
-      desc: "The fastest way to generate SEO-rich articles.",
+      desc: "Generate SEO-rich articles, fast.",
     },
   ],
 
