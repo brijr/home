@@ -49,6 +49,11 @@ const bt = {
       desc: "Automated sales outreach and follow-up.",
     },
     {
+      label: "Ishi",
+      href: "https://ishi.dev",
+      desc: "Next.js starter to ship Fast.",
+    },
+    {
       label: "Router.so",
       href: "https://router.so",
       desc: "Simple backend for lead capture and routing.",
