@@ -1,9 +1,9 @@
 const bt = {
   categories: [
     { label: "Software", href: "/software" },
-    { label: "Open Source", href: "/os" },
     { label: "Websites", href: "/websites" },
     { label: "Brands", href: "/brands" },
+    { label: "Open Source", href: "/os" },
     { label: "Work", href: "/work" },
     { label: "Posts", href: "/posts" },
   ],
