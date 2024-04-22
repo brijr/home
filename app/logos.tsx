@@ -8,7 +8,7 @@ import four from "@/public/four.svg";
 
 const Logos = () => {
   return (
-    <div className="grid mt-8 gap-4 not-prose grid-cols-2 md:grid-cols-4 h-20 items-center justify-center">
+    <div className="md:grid mt-8 gap-4 hidden not-prose grid-cols-2 md:grid-cols-4 h-20 items-center justify-center">
       <Link
         className="hover:opacity-60 transition-all invert dark:invert-0"
         href="https://9d8.dev"
