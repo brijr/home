@@ -19,7 +19,7 @@
     "@vercel/analytics": "^1.2.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
-    "framer-motion": "^11.0.8",
+    "framer-motion": "^11.0.20",
     "i": "^0.3.7",
     "ip": "^2.0.1",
     "lucide-react": "^0.336.0",

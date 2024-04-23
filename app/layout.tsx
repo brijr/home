@@ -1,14 +1,16 @@
-import "./globals.css";
 import { Manrope as FontSans } from "next/font/google";
 import { ReactNode } from "react";
 import { Layout, Main } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
+import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+
+import "./globals.css";
+
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/logo.svg";
-import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bridger.to"),
