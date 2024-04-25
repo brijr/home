@@ -10,3 +10,5 @@ Hello! This is the code for my perosnal website. I am a design engineer and I cr
 - Typescript
 - Tailwind
 - MDX
+- shadcn/ui
+- brijr/craft
