@@ -21,7 +21,7 @@ const bt = {
     },
     {
       label: "resume.bridger.to",
-      href: "https://resume.bridger.to",
+      href: "https://read.cv/brijr",
       desc: "My resume and work experience",
     },
     {
