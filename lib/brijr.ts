@@ -20,7 +20,7 @@ const bt = {
       desc: "Product Design and Development work",
     },
     {
-      label: "resume.bridger.to",
+      label: "resume",
       href: "https://read.cv/brijr",
       desc: "My resume and work experience",
     },
