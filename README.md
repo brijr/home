@@ -6,7 +6,7 @@ Hello! This is the code for my portfolio. I am a design engineer and I create br
 
 ## Website Tech Stack
 
-- Next.js
+- Next.js 14
 - Typescript
 - Tailwind
 - MDX
