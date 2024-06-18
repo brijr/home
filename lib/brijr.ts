@@ -98,9 +98,9 @@ const bt = {
       desc: "Next.js and MDX starter template",
     },
     {
-      label: "9d8 Starter",
-      href: "https://github.com/9d8dev/starter",
-      desc: "Next.js starter template for 9d8 projects",
+      label: "brijr/starter",
+      href: "https://github.com/brijr/starter",
+      desc: "Next.js starter template for projects",
     },
     {
       label: "brijr/home",
