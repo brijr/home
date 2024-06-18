@@ -73,7 +73,7 @@ const bt = {
       desc: "Next.js components for building websites",
     },
     {
-      label: "next-wp",
+      label: "9d8dev/next-wp",
       href: "https://wp.9d8.dev",
       desc: "Next.js starter for headless WordPress",
     },
@@ -93,7 +93,7 @@ const bt = {
       desc: "WordPress template for speed and performance",
     },
     {
-      label: "MDX Starter",
+      label: "brijr/mdx-starter",
       href: "https://github.com/brijr/mdx-starter",
       desc: "Next.js and MDX starter template",
     },
