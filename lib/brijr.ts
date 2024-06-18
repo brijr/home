@@ -74,7 +74,7 @@ const bt = {
     },
     {
       label: "next-wp",
-      href: "https://github.com/brijr/components",
+      href: "https://wp.9d8.dev",
       desc: "Next.js starter for headless WordPress",
     },
     {
