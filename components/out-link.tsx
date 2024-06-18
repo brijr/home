@@ -11,7 +11,7 @@ export const OutLink = ({
 }) => {
   return (
     <a
-      className="not-prose group flex items-center gap-4 rounded-lg border bg-accent/20 p-4 transition-all hover:bg-accent/50"
+      className="not-prose group grid grid-cols-[40px_1fr] items-start gap-4 rounded-lg border bg-accent/20 p-4 transition-all hover:bg-accent/50"
       href={href}
       target="_blank"
       rel="noopener noreferrer"
