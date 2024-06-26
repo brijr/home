@@ -40,18 +40,22 @@ const Main = ({ children, className, id }: MainProps) => {
   return (
     <main
       className={cn(
+        // `Main` Specific Styles
+        "max-w-none prose-p:m-0",
         // General Prose
-        "prose:font-sans prose prose-neutral max-w-none dark:prose-invert",
+        "prose prose-neutral prose:font-sans dark:prose-invert xl:prose-lg",
         // Prose Headings
         "prose-headings:mb-2 prose-headings:mt-8 prose-headings:text-lg prose-headings:font-semibold prose-headings:text-primary prose-h1:mt-0 prose-h1:text-foreground prose-h2:mt-0 prose-h2:text-foreground sm:prose-headings:mt-12 sm:prose-h1:mt-0 sm:prose-h2:mt-0",
-        // Prose Paragraphs
-        "prose-p:mb-0",
         // Prose Strong
         "prose-strong:font-semibold",
         // Inline Links
-        "prose-a:border-b prose-a:text-muted-foreground prose-a:no-underline prose-a:transition-all hover:prose-a:text-primary",
+        "prose-a:underline prose-a:decoration-primary/50 prose-a:underline-offset-2 prose-a:text-foreground/75 prose-a:transition-all",
+        // Inline Link Hover
+        "hover:prose-a:decoration-primary hover:prose-a:text-foreground",
         // Blockquotes
         "prose-blockquote:not-italic",
+        // Pre and Code Blocks
+        "prose-pre:border prose-pre:bg-muted/25 prose-pre:text-foreground",
         "pb-12 sm:pb-24",
         className
       )}

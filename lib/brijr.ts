@@ -83,16 +83,6 @@ const bt = {
       desc: "Opinionated Next.js design system for rapid building",
     },
     {
-      label: "Fjord",
-      href: "https://fjord.dev",
-      desc: "Next.js Headless WordPress template",
-    },
-    {
-      label: "WindPress",
-      href: "https://github.com/alpinecodex/windpress",
-      desc: "WordPress template for speed and performance",
-    },
-    {
       label: "brijr/mdx-starter",
       href: "https://github.com/brijr/mdx-starter",
       desc: "Next.js and MDX starter template",
@@ -106,6 +96,16 @@ const bt = {
       label: "brijr/home",
       href: "https://github.com/brijr/home",
       desc: "Source code for this website!",
+    },
+    {
+      label: "Fjord",
+      href: "https://fjord.dev",
+      desc: "Next.js Headless WordPress template",
+    },
+    {
+      label: "WindPress",
+      href: "https://github.com/alpinecodex/windpress",
+      desc: "WordPress template for speed and performance",
     },
   ],
 
