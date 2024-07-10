@@ -1,7 +1,7 @@
 import { Manrope as FontSans } from "next/font/google";
 import { ReactNode } from "react";
 
-import { Layout, Main } from "@/components/craft";
+import { Layout } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 
@@ -38,7 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={cn(
           "m-6 bg-background font-sans text-lg antialiased selection:bg-indigo-500 selection:text-indigo-100",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <ThemeProvider
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
         >
           <Nav />
-          <Main className="fade-in-2 mx-auto max-w-xl">{children}</Main>
+          {children}
           <Footer />
           <Analytics />
         </ThemeProvider>
