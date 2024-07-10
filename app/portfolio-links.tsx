@@ -1,4 +1,4 @@
-import bt from "@/lib/brijr";
+import bt from "@/lib/projects";
 import Link from "next/link";
 import { Folder } from "lucide-react";
 
