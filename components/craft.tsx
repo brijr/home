@@ -113,6 +113,7 @@ const Article = ({ children, className, id }: ArticleProps) => {
         "prose-headings:mb-2 prose-headings:mt-8 prose-headings:text-lg prose-headings:font-semibold prose-headings:text-primary prose-h1:mt-0 prose-h1:text-foreground prose-h2:mt-0 prose-h2:text-foreground sm:prose-headings:mt-12 sm:prose-h1:mt-0 sm:prose-h2:mt-0",
         // Inline Links
         "prose-a:text-primary prose-a:underline prose-a:decoration-primary prose-a:underline-offset-2 prose-a:transition-all hover:prose-a:underline-offset-4 hover:prose-a:opacity-80",
+        "prose-pre:border prose-pre:bg-muted/25 prose-pre:text-foreground",
         // Blockquotes
         "prose-blockquote:not-italic",
         className,
