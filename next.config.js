@@ -13,13 +13,28 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/twitter",
+        source: "/youtube",
+        destination: "https://www.youtube.com/@bridgertower",
+        permanent: true,
+      },
+      {
+        source: "/linkedin",
+        destination: "https://www.linkedin.com/in/brdgr",
+        permanent: true,
+      },
+      {
+        source: "/github",
+        destination: "https://github.com/brijr",
+        permanent: true,
+      },
+      {
+        source: "/x",
         destination: "https://twitter.com/bridgertower",
         permanent: true,
       },
       {
-        source: "/youtube",
-        destination: "https://www.youtube.com/@bridgertower",
+        source: "/resume",
+        destination: "https://read.cv/brijr",
         permanent: true,
       },
       {

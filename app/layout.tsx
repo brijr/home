@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Manrope as FontSans } from "next/font/google";
+import { Literata as FontSerif } from "next/font/google";
 import { ReactNode } from "react";
 
 import { Layout } from "@/components/craft";
@@ -8,7 +9,6 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { Main } from "@/components/craft";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -30,6 +30,11 @@ import { cn } from "@/lib/utils";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+const fontSerif = FontSerif({
+  subsets: ["latin"],
+  variable: "--font-serif",
 });
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -63,7 +68,7 @@ const Nav = () => {
     <nav className="mb-32">
       <div className="grid gap-6">
         <div className="flex items-center justify-between">
-          <Link href="/">
+          <Link href="/" className="flex items-end gap-2">
             <Image
               priority
               className="invert transition-all hover:opacity-70 dark:invert-0"
@@ -72,6 +77,7 @@ const Nav = () => {
               height={43.97}
               alt="bridger tower logo"
             ></Image>
+            <p className="hidden md:block">Bridger Tower</p>
           </Link>
           <div className="flex items-center gap-4 text-base">
             <a
