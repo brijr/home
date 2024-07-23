@@ -27,7 +27,7 @@ const workData: Record<string, WorkType[]> = {
       description: "Open source form backend for developers",
     },
   ],
-  openSource: [
+  "Open Source": [
     {
       name: "9d8/next-wp",
       href: "https://wp.9d8.dev",
@@ -66,26 +66,31 @@ const workData: Record<string, WorkType[]> = {
       description: "Design and Development Studio",
     },
   ],
-  social: [
+  socials: [
     {
       name: "Resume",
       href: "/resume",
+      description: "See my resume",
     },
     {
       name: "X",
       href: "/x",
+      description: "Follow me on X",
     },
     {
       name: "YouTube",
       href: "/youtube",
+      description: "Watch my videos",
     },
     {
       name: "Github",
       href: "/github",
+      description: "See my code",
     },
     {
       name: "LinkedIn",
       href: "/linkedin",
+      description: "Connect with me",
     },
   ],
 };
