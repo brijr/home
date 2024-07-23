@@ -103,9 +103,8 @@ const Hero = () => (
   <section className="not-prose">
     <h1 className="sr-only">Bridger Tower | Design Engineer</h1>
     <h2 className="font-serif text-4xl">
-      Design Engineer building <Component className="inline" size={32} />{" "}
-      software, <Monitor className="inline" size={32} /> websites, and{" "}
-      <PencilRuler className="inline" size={32} /> brands.
+      Design Engineer building software, websites, and brands. Passionate about
+      the intersection of design and technology.
     </h2>
   </section>
 );
