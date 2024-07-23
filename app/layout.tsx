@@ -65,7 +65,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 const Nav = () => {
   return (
-    <nav className="mb-32">
+    <nav className="mb-12 md:mb-32">
       <div className="grid gap-6">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-end gap-2">

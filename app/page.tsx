@@ -60,11 +60,6 @@ const workData: Record<string, WorkType[]> = {
       href: "https://studiomojave.com",
       description: "Design Studio in St George, Utah",
     },
-    {
-      name: "wip.ac",
-      href: "https://wip.ac",
-      description: "Design and Development Studio",
-    },
   ],
   socials: [
     {
@@ -130,15 +125,11 @@ const WorkSection = ({
           href={item.href}
           key={item.href}
           target="_blank"
-          className="group flex justify-between items-center py- border-b hover:bg-accent/50 transition-all"
+          className="group flex flex-col md:flex-row md:justify-between md:items-center py-2 md:border-b p-3 rounded-lg md:rounded-none md:py-1 md:px-0 bg-accent/50 border md:border-x-0 md:border-t-0 md:bg-transparent hover:bg-accent/50 transition-all"
         >
           {item.name}
-          <span className="text-sm flex gap-2 items-center text-muted-foreground group-hover:text-foreground transition-all">
+          <span className="text-sm text-muted-foreground group-hover:text-foreground transition-all">
             {item.description}
-            <ExternalLink
-              size={16}
-              className="text-muted-foreground transition-all w-0 opacity-0 group-hover:w-4 group-hover:opacity-100 duration-500"
-            />
           </span>
         </Link>
       ))}
