@@ -21,7 +21,7 @@ const Layout = ({ children, className }: LayoutProps) => {
       suppressHydrationWarning
       className={cn(
         "no-scrollbar scroll-smooth antialiased focus:scroll-auto",
-        className,
+        className
       )}
     >
       {children}
@@ -57,7 +57,7 @@ const Main = ({ children, className, id }: MainProps) => {
         // Pre and Code Blocks
         "prose-pre:border prose-pre:bg-muted/25 prose-pre:text-foreground",
         "pb-12 sm:pb-24",
-        className,
+        className
       )}
       id={id}
     >
@@ -116,7 +116,7 @@ const Article = ({ children, className, id }: ArticleProps) => {
         "prose-pre:border prose-pre:bg-muted/25 prose-pre:text-foreground",
         // Blockquotes
         "prose-blockquote:not-italic",
-        className,
+        className
       )}
       id={id}
     >

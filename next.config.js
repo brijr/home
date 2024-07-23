@@ -12,6 +12,51 @@ const nextConfig = {
         destination: "https://github.com/brijr/craft",
         permanent: true,
       },
+      {
+        source: "/twitter",
+        destination: "https://twitter.com/bridgertower",
+        permanent: true,
+      },
+      {
+        source: "/youtube",
+        destination: "https://www.youtube.com/@bridgertower",
+        permanent: true,
+      },
+      {
+        source: "/brands",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/os",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/software",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/ventures",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/websites",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/work",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/posts/:path*",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };

@@ -1,3 +1,4 @@
+import "./globals.css";
 import { Manrope as FontSans } from "next/font/google";
 import { ReactNode } from "react";
 
@@ -5,10 +6,9 @@ import { Layout } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 
-import "./globals.css";
-
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import { Main } from "@/components/craft";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://bridger.to"),
   title: "Bridger Tower :: Designer and Developer",
   description:
-    "I am a designer and developer from Utah. I work as a design engineer at Ampry. I founded Zion Design and I am currently building Alpine Codex and 9d8 to deliver next-gen performance marketing software.",
+    "Designer and Developer from Utah. Building software, websites, and brands.",
 };
 
 interface RootLayoutProps {
@@ -37,8 +37,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <Layout>
       <body
         className={cn(
-          "m-6 bg-background font-sans text-lg antialiased selection:bg-indigo-500 selection:text-indigo-100",
-          fontSans.variable,
+          "m-6 sm:m-12 font-sans max-w-2xl antialiased selection:bg-indigo-500 selection:text-indigo-100",
+          "fade-in",
+          fontSans.variable
         )}
       >
         <ThemeProvider
@@ -59,7 +60,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
 const Nav = () => {
   return (
-    <nav className="mx-auto my-8 mb-24 max-w-xl fade-in md:my-24 md:mb-36">
+    <nav className="mb-32">
       <div className="grid gap-6">
         <div className="flex items-center justify-between">
           <Link href="/">
@@ -90,7 +91,7 @@ const Nav = () => {
 
 const Footer = () => {
   return (
-    <footer className="fade-in-3 mx-auto mb-12 mt-8 max-w-xl md:mt-24">
+    <footer className="fade-in-3 mb-12 mt-8 md:mt-24">
       <a
         href="https://twitter.com/bridgertower"
         target="_blank"

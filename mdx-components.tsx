@@ -1,8 +1,6 @@
 import type { MDXComponents } from "mdx/types";
 import Image, { ImageProps } from "next/image";
 import Link from "next/link";
-import { Breadcrumb } from "./components/breadcrumb";
-import { Posts } from "./components/posts";
 import Logos from "@/app/logos";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -25,8 +23,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {props.children}
       </Link>
     ),
-    Breadcrumb,
-    Posts,
     Logos,
     ...components,
   };
