@@ -1,5 +1,5 @@
 import { Main } from "@/components/craft";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Component, Monitor, PencilRuler } from "lucide-react";
 
 import Link from "next/link";
 
@@ -108,7 +108,9 @@ const Hero = () => (
   <section className="not-prose">
     <h1 className="sr-only">Bridger Tower | Design Engineer</h1>
     <h2 className="font-serif text-4xl">
-      I&apos;m a design engineer building software, websites, and brands.
+      Design Engineer building <Component className="inline" size={32} />{" "}
+      software, <Monitor className="inline" size={32} /> websites, and{" "}
+      <PencilRuler className="inline" size={32} /> brands.
     </h2>
   </section>
 );
