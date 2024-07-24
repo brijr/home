@@ -82,11 +82,6 @@ const workData: Record<string, WorkType[]> = {
       href: "/github",
       description: "See my code",
     },
-    {
-      name: "LinkedIn",
-      href: "/linkedin",
-      description: "Connect with me",
-    },
   ],
 };
 
