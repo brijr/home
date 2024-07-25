@@ -60,6 +60,11 @@ const workData: Record<string, WorkType[]> = {
       href: "https://studiomojave.com",
       description: "Design Studio in St George, Utah",
     },
+    {
+      name: "wip.ac",
+      href: "https://wip.ac",
+      description: "Web Design and Development Source",
+    },
   ],
   socials: [
     {
