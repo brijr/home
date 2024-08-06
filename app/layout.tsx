@@ -42,7 +42,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <Layout>
       <body
         className={cn(
-          "m-6 sm:m-12 font-sans max-w-2xl antialiased selection:bg-indigo-500 selection:text-indigo-100",
+          "m-6 sm:m-12 font-sans max-w-2xl m-auto antialiased selection:bg-indigo-500 selection:text-indigo-100",
           "fade-in",
           fontSans.variable
         )}
