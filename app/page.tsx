@@ -1,5 +1,4 @@
 import { Main } from "@/components/craft";
-import { ExternalLink, Component, Monitor, PencilRuler } from "lucide-react";
 
 import Link from "next/link";
 
@@ -107,9 +106,9 @@ export default function Home() {
 const Hero = () => (
   <section className="not-prose">
     <h1 className="sr-only">Bridger Tower | Design Engineer</h1>
-    <h2 className="font-serif text-4xl">
+    <h2 className="font-serif text-3xl">
       Design Engineer building software, websites, and brands. Passionate about
-      the intersection of design and technology.
+      the intersection of design, technology, and marketing.
     </h2>
   </section>
 );
