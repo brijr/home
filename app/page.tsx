@@ -26,6 +26,11 @@ const workData: Record<string, WorkType[]> = {
       href: "https://router.so",
       description: "Open source form backend for developers",
     },
+    {
+      name: "Builder Kit",
+      href: "https://builderkit.io",
+      description: "Open source AI writing tool",
+    },
   ],
   "Open Source": [
     {
