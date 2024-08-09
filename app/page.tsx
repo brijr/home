@@ -77,11 +77,6 @@ const workData: Record<string, WorkType[]> = {
       description: "See my resume",
     },
     {
-      name: "X",
-      href: "/x",
-      description: "Follow me on X",
-    },
-    {
       name: "YouTube",
       href: "/youtube",
       description: "Watch my videos",
@@ -90,6 +85,11 @@ const workData: Record<string, WorkType[]> = {
       name: "Github",
       href: "/github",
       description: "See my code",
+    },
+    {
+      name: "X",
+      href: "/x",
+      description: "Follow me on X",
     },
   ],
 };
@@ -104,12 +104,14 @@ export default function Home() {
 }
 
 const Hero = () => (
-  <section className="not-prose">
+  <section className="not-prose grid gap-4">
     <h1 className="sr-only">Bridger Tower | Design Engineer</h1>
-    <h2 className="font-serif text-3xl">
-      Design Engineer building software, websites, and brands. Passionate about
-      the intersection of design, technology, and marketing.
+    <h2 className="font-bold text-4xl">
+      Design Engineer building software, websites, and brands.
     </h2>
+    <p>
+      Passionate about the intersection of design, technology, and marketing.
+    </p>
   </section>
 );
 
@@ -128,7 +130,7 @@ const WorkSection = ({
           href={item.href}
           key={item.href}
           target="_blank"
-          className="group flex flex-col md:flex-row md:justify-between md:items-center py-2 md:border-b p-3 rounded-lg md:rounded-none md:py-1 md:px-0 bg-accent/50 border md:border-x-0 md:border-t-0 md:bg-transparent hover:bg-accent/50 transition-all"
+          className="group flex flex-col text-base md:flex-row md:justify-between md:items-center py-2 md:border-b p-3 rounded-lg md:rounded-none md:py-1 md:px-0 bg-accent/50 border md:border-x-0 md:border-t-0 md:bg-transparent hover:border-purple-400 transition-all"
         >
           {item.name}
           <span className="text-sm text-muted-foreground group-hover:text-foreground transition-all">
