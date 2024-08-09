@@ -122,8 +122,10 @@ const WorkSection = ({
   title: string;
   items: WorkType[];
 }) => (
-  <>
-    <h3>{title}</h3>
+  <div className="group relative my-8 grid gap-4">
+    <h3 className="not-prose text-purple-500 dark:text-purple-300 opacity-0 text-base group-hover:opacity-100 transition-all ">
+      {title}
+    </h3>
     <div className="grid gap-2 not-prose">
       {items.map((item) => (
         <Link
@@ -139,7 +141,7 @@ const WorkSection = ({
         </Link>
       ))}
     </div>
-  </>
+  </div>
 );
 
 const Work = () => (
