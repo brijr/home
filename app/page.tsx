@@ -72,14 +72,14 @@ const workData: Record<string, WorkType[]> = {
   ],
   socials: [
     {
-      name: "Resume",
-      href: "/resume",
-      description: "See my resume",
-    },
-    {
       name: "YouTube",
       href: "/youtube",
       description: "Watch my videos",
+    },
+    {
+      name: "Email",
+      href: "mailto:bridgertower@gmail.com",
+      description: "Contact me",
     },
     {
       name: "Github",
@@ -122,8 +122,8 @@ const WorkSection = ({
   title: string;
   items: WorkType[];
 }) => (
-  <div className="group relative my-8 grid gap-4">
-    <h3 className="not-prose text-purple-500 dark:text-purple-300 opacity-0 text-base group-hover:opacity-100 transition-all ">
+  <div className="group relative my-8 grid gap-2">
+    <h3 className="not-prose text-purple-500 dark:text-purple-300 opacity-0 text-sm group-hover:opacity-100 transition-all  origin-bottom-left duration-500 text-right">
       {title}
     </h3>
     <div className="grid gap-2 not-prose">
