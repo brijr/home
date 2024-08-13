@@ -44,7 +44,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={cn(
           "my-6 sm:my-12 font-sans max-w-2xl mx-auto antialiased selection:bg-indigo-500 selection:text-indigo-100",
           "fade-in",
-          fontSans.variable
+          "px-6 md:px-2",
+          fontSans.variable,
         )}
       >
         <ThemeProvider
