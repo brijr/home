@@ -29,7 +29,7 @@ const nextConfig = {
       },
       {
         source: "/x",
-        destination: "https://twitter.com/bridgertower",
+        destination: "https://x.com/_brijr",
         permanent: true,
       },
       {
