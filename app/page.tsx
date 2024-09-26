@@ -40,7 +40,7 @@ const Hero = () => (
 const Work = () => (
   <Section>
     <div className="space-y-3 md:space-y-1">
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <Link
           href={project.href}
           key={project.href}
@@ -49,7 +49,8 @@ const Work = () => (
             "group grid items-center rounded-sm p-3 md:py-2 md:px-3 md:-mx-3",
             "bg-accent/10 md:bg-transparent",
             "sm:grid-cols-[10rem_1fr] xl:grid-cols-[10rem_1fr_auto]",
-            "hover:bg-accent/50 border md:border-transparent md:hover:border-border transition-all"
+            "hover:bg-accent/50 border md:border-transparent md:hover:border-border transition-all",
+            "fade-in"
           )}
         >
           <h3 className="group-hover:underline -mt-[3px] decoration-dotted underline-offset-4 decoration-primary/50 transition-all">
