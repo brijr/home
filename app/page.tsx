@@ -1,7 +1,6 @@
 import { ModeToggle } from "@/components/mode-toggle";
 import { projects } from "@/lib/data";
 import { cn } from "@/lib/utils";
-import { Project } from "@/lib/@types";
 
 import Balancer from "react-wrap-balancer";
 import logo from "@/public/logo.svg";
