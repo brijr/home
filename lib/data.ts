@@ -1,5 +1,3 @@
-import { Project } from "./@types";
-
 export const projects: Project[] = [
   {
     name: "WIP Design",
