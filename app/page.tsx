@@ -21,59 +21,9 @@ export default function Home() {
   );
 }
 
-const Hero = () => (
-  <Section className="space-y-4">
-    <h1 className="sr-only">Bridger Tower | Design Engineer</h1>
-    <h2 className="text-2xl md:text-4xl font-medium">
-      <Balancer>
-        Design Engineer building software, websites, and brands.
-      </Balancer>
-    </h2>
-    <p className="text-muted-foreground">
-      <Balancer>
-        Passionate about the intersection of design, technology, and marketing.
-      </Balancer>
-    </p>
-  </Section>
-);
-
-const Work = () => (
-  <Section>
-    <div className="space-y-3 md:space-y-1">
-      {projects.map((project, index) => (
-        <Link
-          href={project.href}
-          key={project.href}
-          target="_blank"
-          className={cn(
-            "group grid items-center rounded-sm p-3 md:py-2 md:px-3 md:-mx-3",
-            "bg-accent/10 md:bg-transparent",
-            "sm:grid-cols-[10rem_1fr] xl:grid-cols-[10rem_1fr_auto]",
-            "hover:bg-accent/50 border md:border-transparent md:hover:border-border transition-all",
-            "fade-in"
-          )}
-        >
-          <h3 className="group-hover:underline -mt-[3px] decoration-dotted underline-offset-4 decoration-primary/50 transition-all">
-            {project.name}
-          </h3>
-          <p className="text-sm text-muted-foreground group-hover:text-foreground transition-all">
-            {project.description}
-          </p>
-          <h4 className="hidden md:flex items-center gap-2 text-muted-foreground group-hover:text-foreground transition-all">
-            <span className="hidden xl:block text-xs px-1 py-px rounded-sm bg-accent/30 border">
-              {project.tag}
-            </span>
-            <ExternalLink className="w-0 h-3 opacity-0 group-hover:w-3 group-hover:opacity-100 transition-all" />
-          </h4>
-        </Link>
-      ))}
-    </div>
-  </Section>
-);
-
 const Nav = () => (
   <nav>
-    <section className="md:p-6">
+    <section className="md:p-6 fade-in">
       <div
         className={cn(
           "absolute top-0 inset-x-0 z-[9999] p-6 text-black",
@@ -97,6 +47,55 @@ const Nav = () => (
   </nav>
 );
 
+const Hero = () => (
+  <Section className="space-y-4" sectionClasses="fade-in-2">
+    <h1 className="sr-only">Bridger Tower | Design Engineer</h1>
+    <h2 className="text-2xl md:text-4xl font-medium">
+      <Balancer>
+        Design Engineer building software, websites, and brands.
+      </Balancer>
+    </h2>
+    <p className="text-muted-foreground">
+      <Balancer>
+        Passionate about the intersection of design, technology, and marketing.
+      </Balancer>
+    </p>
+  </Section>
+);
+
+const Work = () => (
+  <Section sectionClasses="fade-in-3">
+    <div className="space-y-3 md:space-y-1">
+      {projects.map((project, index) => (
+        <Link
+          href={project.href}
+          key={project.href}
+          target="_blank"
+          className={cn(
+            "group grid items-center rounded-sm p-3 md:py-2 md:px-3 md:-mx-3",
+            "bg-accent/10 md:bg-transparent",
+            "sm:grid-cols-[10rem_1fr] xl:grid-cols-[10rem_1fr_auto]",
+            "hover:bg-accent/50 border md:border-transparent md:hover:border-border transition-all"
+          )}
+        >
+          <h3 className="group-hover:underline -mt-[3px] decoration-dotted underline-offset-4 decoration-primary/50 transition-all">
+            {project.name}
+          </h3>
+          <p className="text-sm text-muted-foreground group-hover:text-foreground transition-all">
+            {project.description}
+          </p>
+          <h4 className="hidden md:flex items-center gap-2 text-muted-foreground group-hover:text-foreground transition-all">
+            <span className="hidden xl:block text-xs px-1 py-px rounded-sm bg-accent/30 border">
+              {project.tag}
+            </span>
+            <ExternalLink className="w-0 h-3 opacity-0 group-hover:w-3 group-hover:opacity-100 transition-all" />
+          </h4>
+        </Link>
+      ))}
+    </div>
+  </Section>
+);
+
 const Footer = () => {
   const footerLinks = [
     {
@@ -115,7 +114,10 @@ const Footer = () => {
 
   return (
     <footer className="border-t">
-      <Section className="flex items-center justify-between text-sm text-muted-foreground">
+      <Section
+        className="flex items-center justify-between text-sm text-muted-foreground"
+        sectionClasses="fade-in-4"
+      >
         <div className="flex items-center gap-4">
           <ModeToggle />
           {footerLinks.map((link) => (
@@ -145,11 +147,13 @@ const Footer = () => {
 const Section = ({
   children,
   className,
+  sectionClasses,
 }: {
   children: React.ReactNode;
   className?: string;
+  sectionClasses?: string;
 }) => (
-  <section className="p-6">
+  <section className={cn("p-6", sectionClasses)}>
     <div className={cn("max-w-screen-md mx-auto", className)}>{children}</div>
   </section>
 );

@@ -71,16 +71,33 @@
 }
 
 .fade-in {
-    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in-up 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-@keyframes fade-in {
+.fade-in-2 {
+    animation: fade-in-up 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-delay: 300ms;
+}
+
+.fade-in-3 {
+    animation: fade-in-up 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-delay: 600ms;
+}
+
+.fade-in-4 {
+    animation: fade-in-up 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-delay: 900ms;
+}
+
+@keyframes fade-in-up {
     from {
         opacity: 0;
+        transform: translateY(10px);
     }
 
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
