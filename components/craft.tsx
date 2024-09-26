@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Manrope as FontSans } from "next/font/google";
 
 // cn util
 import { type ClassValue, clsx } from "clsx";
@@ -14,6 +15,8 @@ type LayoutProps = {
   className?: string;
 };
 
+const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
+
 const Layout = ({ children, className }: LayoutProps) => {
   return (
     <html
@@ -24,7 +27,16 @@ const Layout = ({ children, className }: LayoutProps) => {
         className
       )}
     >
-      {children}
+      <body
+        className={cn(
+          fontSans.variable,
+          "font-sans antialiased scroll-smooth",
+          "selection:bg-amber-500/20 selection:text-amber-900",
+          "dark:selection:bg-amber-500/30 dark:selection:text-amber-100"
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 };

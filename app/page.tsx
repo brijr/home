@@ -1,104 +1,18 @@
 import { Main } from "@/components/craft";
+import { ModeToggle } from "@/components/mode-toggle";
+import { workData } from "@/lib/data";
 
+import logo from "@/public/logo.svg";
+import Image from "next/image";
 import Link from "next/link";
-
-type WorkType = {
-  name: string;
-  href: string;
-  description?: string;
-};
-
-const workData: Record<string, WorkType[]> = {
-  software: [
-    {
-      name: "WaveFinder",
-      href: "https://wavefinder.io",
-      description: "AI first Advertising Platform for FB and TikTok",
-    },
-    {
-      name: "Outr",
-      href: "https://outr.io",
-      description: "Personalized cold outreach with AI",
-    },
-    {
-      name: "Router.so",
-      href: "https://router.so",
-      description: "Open source form backend for developers",
-    },
-    {
-      name: "Builder Kit",
-      href: "https://builderkit.io",
-      description: "Open source AI writing tool",
-    },
-  ],
-  "Open Source": [
-    {
-      name: "9d8/next-wp",
-      href: "https://wp.9d8.dev",
-      description: "Next.js WordPress starter",
-    },
-    {
-      name: "brijr/components",
-      href: "https://components.bridger.to",
-      description: "Next.js / shadcn/ui components for websites",
-    },
-    {
-      name: "brijr/craft",
-      href: "https://bridger.to/craft",
-      description: "React design system for websites",
-    },
-  ],
-  ventures: [
-    {
-      name: "9d8",
-      href: "https://9d8.dev",
-      description: "Software Design and Development Studio",
-    },
-    {
-      name: "Alpine Codex",
-      href: "https://alpinecodex.com",
-      description: "Marketing Software and Applied AI",
-    },
-    {
-      name: "Studio Mojave",
-      href: "https://studiomojave.com",
-      description: "Design Studio in St George, Utah",
-    },
-    {
-      name: "wip.ac",
-      href: "https://wip.ac",
-      description: "Web Design and Development Source",
-    },
-  ],
-  socials: [
-    {
-      name: "YouTube",
-      href: "/youtube",
-      description: "Watch my videos",
-    },
-    {
-      name: "Email",
-      href: "mailto:bridgertower@gmail.com",
-      description: "Contact me",
-    },
-    {
-      name: "Github",
-      href: "/github",
-      description: "See my code",
-    },
-    {
-      name: "X",
-      href: "/x",
-      description: "Follow me on X",
-    },
-  ],
-};
 
 export default function Home() {
   return (
-    <Main className="fade-in-3">
+    <Main>
+      <Nav />
       <Hero />
       <Work />
+      <Footer />
     </Main>
   );
 }
@@ -154,4 +68,46 @@ const Work = () => (
       />
     ))}
   </section>
+);
+
+const Nav = () => (
+  <nav className="not-prose mb-12 md:mb-32">
+    <div className="flex items-center justify-between">
+      <Link href="/" className="flex items-end gap-2">
+        <Image
+          priority
+          className="invert transition-all hover:opacity-70 dark:invert-0"
+          src={logo}
+          width={54}
+          height={43.97}
+          alt="bridger tower logo"
+        />
+        <p className="hidden md:block">Bridger Tower</p>
+      </Link>
+      <div className="flex items-center gap-4 text-base">
+        <a
+          className="text-muted-foreground transition-all hover:text-foreground"
+          href="https://github.com/brijr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <ModeToggle />
+      </div>
+    </div>
+  </nav>
+);
+
+const Footer = () => (
+  <footer className="not-prose mb-12 mt-8 md:mt-24">
+    <a
+      href="https://x.com/bridgertower"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm text-muted-foreground"
+    >
+      © Bridger Tower, 2024
+    </a>
+  </footer>
 );
