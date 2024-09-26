@@ -22,8 +22,8 @@ export default function Home() {
 }
 
 const Nav = () => (
-  <nav>
-    <section className="md:p-6 fade-in">
+  <nav className="fade-down">
+    <section className="md:p-6">
       <div
         className={cn(
           "absolute top-0 inset-x-0 z-[9999] p-6 text-black",
@@ -48,52 +48,58 @@ const Nav = () => (
 );
 
 const Hero = () => (
-  <Section className="space-y-4" sectionClasses="fade-in-2">
-    <h1 className="sr-only">Bridger Tower | Design Engineer</h1>
-    <h2 className="text-2xl md:text-4xl font-medium">
-      <Balancer>
-        Design Engineer building software, websites, and brands.
-      </Balancer>
-    </h2>
-    <p className="text-muted-foreground">
-      <Balancer>
-        Passionate about the intersection of design, technology, and marketing.
-      </Balancer>
-    </p>
-  </Section>
+  <div className="fade-up-2">
+    <Section className="space-y-4">
+      <h1 className="sr-only">Bridger Tower | Design Engineer</h1>
+      <h2 className="text-2xl md:text-4xl font-medium">
+        <Balancer>
+          Design Engineer building software, websites, and brands.
+        </Balancer>
+      </h2>
+      <p className="text-muted-foreground">
+        <Balancer>
+          Passionate about the intersection of design, technology, and
+          marketing.
+        </Balancer>
+      </p>
+    </Section>
+  </div>
 );
 
 const Work = () => (
-  <Section sectionClasses="fade-in-3">
-    <div className="space-y-3 md:space-y-1">
-      {projects.map((project, index) => (
-        <Link
-          href={project.href}
-          key={project.href}
-          target="_blank"
-          className={cn(
-            "group grid items-center rounded-sm p-3 md:py-2 md:px-3 md:-mx-3",
-            "bg-accent/10 md:bg-transparent",
-            "sm:grid-cols-[10rem_1fr] xl:grid-cols-[10rem_1fr_auto]",
-            "hover:bg-accent/50 border md:border-transparent md:hover:border-border transition-all"
-          )}
-        >
-          <h3 className="group-hover:underline -mt-[3px] decoration-dotted underline-offset-4 decoration-primary/50 transition-all">
-            {project.name}
-          </h3>
-          <p className="text-sm text-muted-foreground group-hover:text-foreground transition-all">
-            {project.description}
-          </p>
-          <h4 className="hidden md:flex items-center gap-2 text-muted-foreground group-hover:text-foreground transition-all">
-            <span className="hidden xl:block text-xs px-1 py-px rounded-sm bg-accent/30 border">
-              {project.tag}
-            </span>
-            <ExternalLink className="w-0 h-3 opacity-0 group-hover:w-3 group-hover:opacity-100 transition-all" />
-          </h4>
-        </Link>
-      ))}
-    </div>
-  </Section>
+  <div className="fade-up-3">
+    <Section>
+      <div className="space-y-3 md:space-y-1">
+        {projects.map((project, index) => (
+          <div key={project.href} className={`fade-in-up fade-in-${index + 4}`}>
+            <Link
+              href={project.href}
+              target="_blank"
+              className={cn(
+                "group grid items-center rounded-sm p-3 md:py-2 md:px-3 md:-mx-3",
+                "bg-accent/10 md:bg-transparent",
+                "sm:grid-cols-[10rem_1fr] xl:grid-cols-[10rem_1fr_auto]",
+                "hover:bg-accent/50 border md:border-transparent md:hover:border-border transition-all"
+              )}
+            >
+              <h3 className="group-hover:underline -mt-[3px] decoration-dotted underline-offset-4 decoration-primary/50 transition-all">
+                {project.name}
+              </h3>
+              <p className="text-sm text-muted-foreground group-hover:text-foreground transition-all">
+                {project.description}
+              </p>
+              <h4 className="hidden md:flex items-center gap-2 text-muted-foreground group-hover:text-foreground transition-all">
+                <span className="hidden xl:block text-xs px-1 py-px rounded-sm bg-accent/30 border">
+                  {project.tag}
+                </span>
+                <ExternalLink className="w-0 h-3 opacity-0 group-hover:w-3 group-hover:opacity-100 transition-all" />
+              </h4>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </Section>
+  </div>
 );
 
 const Footer = () => {
@@ -113,26 +119,26 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="border-t">
-      <Section
-        className="flex items-center justify-between text-sm text-muted-foreground"
-        sectionClasses="fade-in-4"
-      >
-        <div className="flex items-center gap-4">
+    <footer className="border-t fade-up-4">
+      <Section className="flex items-center justify-between text-sm text-muted-foreground">
+        <div className="flex flex-row-reverse md:flex-row md:justify-start md:w-fit justify-between w-full items-center gap-4">
           <ModeToggle />
-          {footerLinks.map((link) => (
-            <a
-              key={link.name}
-              className="transition-all hover:text-foreground"
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {link.name}
-            </a>
-          ))}
+          <div className="flex gap-2">
+            {footerLinks.map((link) => (
+              <a
+                key={link.name}
+                className="transition-all hover:text-foreground"
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
         </div>
         <a
+          className="hidden md:block"
           href="https://x.com/bridgertower"
           target="_blank"
           rel="noopener noreferrer"
@@ -147,13 +153,11 @@ const Footer = () => {
 const Section = ({
   children,
   className,
-  sectionClasses,
 }: {
   children: React.ReactNode;
   className?: string;
-  sectionClasses?: string;
 }) => (
-  <section className={cn("p-6", sectionClasses)}>
+  <section className={cn("p-6")}>
     <div className={cn("max-w-screen-md mx-auto", className)}>{children}</div>
   </section>
 );
