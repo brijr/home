@@ -39,16 +39,17 @@ const Hero = () => (
 
 const Work = () => (
   <Section>
-    <div className="space-y-1">
+    <div className="space-y-3 md:space-y-1">
       {projects.map((project) => (
         <Link
           href={project.href}
           key={project.href}
           target="_blank"
           className={cn(
-            "group grid items-center rounded-sm py-2 px-3 -mx-3",
+            "group grid items-center rounded-sm p-3 md:py-2 md:px-3 md:-mx-3",
+            "bg-accent/10 md:bg-transparent",
             "sm:grid-cols-[10rem_1fr] xl:grid-cols-[10rem_1fr_auto]",
-            "hover:bg-accent/50 border border-transparent hover:border-border transition-all"
+            "hover:bg-accent/50 border md:border-transparent md:hover:border-border transition-all"
           )}
         >
           <h3 className="group-hover:underline -mt-[3px] decoration-dotted underline-offset-4 decoration-primary/50 transition-all">
@@ -57,7 +58,7 @@ const Work = () => (
           <p className="text-sm text-muted-foreground group-hover:text-foreground transition-all">
             {project.description}
           </p>
-          <h4 className="flex items-center gap-2 text-muted-foreground group-hover:text-foreground transition-all">
+          <h4 className="hidden md:flex items-center gap-2 text-muted-foreground group-hover:text-foreground transition-all">
             <span className="hidden xl:block text-xs px-1 py-px rounded-sm bg-accent/30 border">
               {project.tag}
             </span>
@@ -74,8 +75,8 @@ const Nav = () => (
     <section className="md:p-6">
       <div
         className={cn(
-          "fixed top-0 z-[9999] inset-x-0 p-6 text-black",
-          "md:static md:p-0 max-w-screen-md md:mx-auto md:text-foreground",
+          "absolute top-0 inset-x-0 z-[9999] p-6 text-black",
+          "md:static md:p-0 md:max-w-screen-md md:mx-auto md:text-foreground",
           "flex items-center justify-between",
           "text-sm md:text-muted-foreground"
         )}
