@@ -29,8 +29,10 @@ const Hero = () => (
         Design Engineer building software, websites, and brands.
       </Balancer>
     </h2>
-    <p>
-      Passionate about the intersection of design, technology, and marketing.
+    <p className="text-muted-foreground">
+      <Balancer>
+        Passionate about the intersection of design, technology, and marketing.
+      </Balancer>
     </p>
   </Section>
 );
