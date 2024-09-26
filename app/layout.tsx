@@ -47,7 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           enableSystem
           disableTransitionOnChange
         >
-          <div className="grid grid-cols-2 h-screen overflow-hidden">
+          <div className="md:grid flex flex-col-reverse md:grid-cols-2 md:h-screen overflow-hidden">
             <div
               className={cn(
                 "overflow-y-scroll no-scrollbar",
@@ -65,7 +65,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <Footer />
               </div>
             </div>
-            <div className="sm:w-full sm:h-screen sunset-gradient"></div>
+            <div className="md:w-full md:h-screen h-[100vw] hidden md:block sunset-gradient"></div>
           </div>
           <Analytics />
         </ThemeProvider>

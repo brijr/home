@@ -181,9 +181,6 @@
             #d37c3f 75%,
             #8d4439 100%);
     position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
     animation: gradientShift 20s ease infinite;
 }
 
