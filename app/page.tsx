@@ -10,10 +10,12 @@ import { ExternalLink } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="divide-y">
-      <Nav />
-      <Hero />
-      <Work />
+    <main className="divide-y flex flex-col min-h-screen">
+      <div className="flex-grow">
+        <Nav />
+        <Hero />
+        <Work />
+      </div>
       <Footer />
     </main>
   );
