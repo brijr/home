@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export const Gradient = () => {
   const gradientStyle = {
     backgroundImage:
-      "linear-gradient(30deg, #8d4439, #d37c3f, #dcb572, #d0cea4, #c4d8c3)",
+      "linear-gradient(0deg, #8d4439, #d37c3f, #dcb572, #d0cea4, #c4d8c3)",
   };
 
   return (
@@ -26,11 +26,12 @@ export const Gradient = () => {
           "linear-gradient(0deg, #8d4439, #d37c3f, #dcb572, #d0cea4, #c4d8c3)",
           "linear-gradient(-30deg, #8d4439, #d37c3f, #dcb572, #d0cea4, #c4d8c3)",
           "linear-gradient(0deg, #8d4439, #d37c3f, #dcb572, #d0cea4, #c4d8c3)",
+          "linear-gradient(30deg, #8d4439, #d37c3f, #dcb572, #d0cea4, #c4d8c3)",
         ],
       }}
       transition={{
         duration: 20,
-        ease: "easeInOut",
+        ease: "linear",
         repeat: Infinity,
       }}
       style={gradientStyle}
