@@ -1,4 +1,6 @@
-export const projects: WorkType[] = [
+import { Project } from "./@types";
+
+export const projects: Project[] = [
   {
     name: "WIP Design",
     href: "https://wip-design.com",

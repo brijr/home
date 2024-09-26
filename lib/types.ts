@@ -1,6 +1,6 @@
-type WorkType = {
+export type Project = {
   name: string;
   href: string;
-  description?: string;
-  tag?: string;
+  description: string;
+  tag: string;
 };
