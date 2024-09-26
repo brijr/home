@@ -38,9 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 const GradientProvider = ({ children }: { children: ReactNode }) => {
   return (
     <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:h-screen overflow-hidden">
-      <div className="overflow-y-auto md:overflow-y-scroll no-scrollbar">
-        {children}
-      </div>
+      <div className="md:overflow-y-scroll no-scrollbar">{children}</div>
       <div className="w-full h-[100vw] md:h-screen sunset-gradient" />
     </div>
   );
