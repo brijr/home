@@ -49,7 +49,7 @@ const Nav = () => (
 
 const Hero = () => (
   <div className="fade-up-2">
-    <Section className="space-y-4">
+    <Section className="grid gap-4">
       <h1 className="sr-only">Bridger Tower | Design Engineer</h1>
       <h2 className="text-2xl md:text-4xl font-medium">
         <Balancer>
