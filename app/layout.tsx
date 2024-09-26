@@ -40,23 +40,33 @@ const fontSerif = FontSerif({
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <Layout>
-      <body
-        className={cn(
-          "my-6 sm:my-12 font-sans max-w-2xl mx-auto antialiased selection:bg-indigo-500 selection:text-indigo-100",
-          "fade-in",
-          "px-6 md:px-2",
-          fontSans.variable,
-        )}
-      >
+      <body className={cn(fontSans.variable)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Nav />
-          {children}
-          <Footer />
+          <div className="grid grid-cols-2 h-screen overflow-hidden">
+            <div
+              className={cn(
+                "overflow-y-scroll no-scrollbar",
+                "fade-in",
+                "px-6 md:px-2"
+              )}
+            >
+              <div
+                className={cn(
+                  "my-6 sm:my-12 font-sans max-w-2xl mx-auto antialiased selection:bg-indigo-500 selection:text-indigo-100"
+                )}
+              >
+                <Nav />
+                {children}
+                <Footer />
+              </div>
+            </div>
+            <div className="sm:w-full sm:h-screen sunset-gradient"></div>
+          </div>
           <Analytics />
         </ThemeProvider>
       </body>
