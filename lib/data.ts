@@ -15,11 +15,6 @@ export const workData: Record<string, WorkType[]> = {
       href: "https://router.so",
       description: "Open source form backend for developers",
     },
-    {
-      name: "Builder Kit",
-      href: "https://builderkit.io",
-      description: "Open source AI writing tool",
-    },
   ],
   "Open Source": [
     {
@@ -36,6 +31,11 @@ export const workData: Record<string, WorkType[]> = {
       name: "brijr/craft",
       href: "https://bridger.to/craft",
       description: "React design system for websites",
+    },
+    {
+      name: "alpinecodex/builderkit",
+      href: "https://github.com/alpinecodex/builderkit",
+      description: "Open source AI writing tool",
     },
   ],
   ventures: [
@@ -55,7 +55,7 @@ export const workData: Record<string, WorkType[]> = {
       description: "Design Studio in St George, Utah",
     },
     {
-      name: "wip.ac",
+      name: "WIP",
       href: "https://wip.ac",
       description: "Web Design and Development Source",
     },

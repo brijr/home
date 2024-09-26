@@ -23,7 +23,7 @@ const Layout = ({ children, className }: LayoutProps) => {
       lang="en"
       suppressHydrationWarning
       className={cn(
-        "no-scrollbar scroll-smooth antialiased focus:scroll-auto",
+        "no-scrollbar h-screen overflow-hidden scroll-smooth antialiased",
         className
       )}
     >
