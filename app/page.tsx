@@ -10,8 +10,8 @@ import { ExternalLink } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="divide-y flex flex-col min-h-screen">
-      <div className="flex-grow">
+    <main className="flex flex-col min-h-screen">
+      <div className="flex-grow divide-y">
         <Nav />
         <Hero />
         <Work />
@@ -69,12 +69,27 @@ const Work = () => (
 
 const Nav = () => (
   <nav>
-    <Section className="flex items-center justify-between text-sm text-muted-foreground">
-      <Link href="/" className="transition-all hover:opacity-80">
-        <Image src={logo} alt="Bridger Tower Logo" width={32} height={26.05} />
-      </Link>
-      <h3>bridger tower :: design engineer</h3>
-    </Section>
+    <section className="md:p-6">
+      <div
+        className={cn(
+          "fixed top-0 z-[9999] inset-x-0 p-6",
+          "md:static md:p-0 max-w-screen-md md:mx-auto",
+          "flex items-center justify-between",
+          "text-sm md:text-muted-foreground"
+        )}
+      >
+        <Link href="/" className="transition-all hover:opacity-80">
+          <Image
+            src={logo}
+            alt="Bridger Tower Logo"
+            className="invert dark:invert-0"
+            width={32}
+            height={26.05}
+          />
+        </Link>
+        <h3>bridger tower :: design engineer</h3>
+      </div>
+    </section>
   </nav>
 );
 
@@ -95,7 +110,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer>
+    <footer className="border-t">
       <Section className="flex items-center justify-between text-sm text-muted-foreground">
         <div className="flex items-center gap-4">
           <ModeToggle />
