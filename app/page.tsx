@@ -123,7 +123,7 @@ const WorkSection = ({
   items: WorkType[];
 }) => (
   <div className="group relative my-8 grid gap-2">
-    <h3 className="not-prose text-purple-500 dark:text-purple-300 opacity-0 text-sm group-hover:opacity-100 transition-all  origin-bottom-left duration-500 text-right">
+    <h3 className="not-prose text-orange-500 dark:text-orange-300 opacity-0 text-sm group-hover:opacity-100 transition-all  origin-bottom-left duration-500 text-right">
       {title}
     </h3>
     <div className="grid gap-2 not-prose">
@@ -132,7 +132,7 @@ const WorkSection = ({
           href={item.href}
           key={item.href}
           target="_blank"
-          className="group flex flex-col text-base md:flex-row md:justify-between md:items-center py-2 md:border-b p-3 rounded-lg md:rounded-none md:py-1 md:px-0 bg-accent/50 border md:border-x-0 md:border-t-0 md:bg-transparent hover:border-purple-400 transition-all"
+          className="group flex flex-col text-base md:flex-row md:justify-between md:items-center py-2 md:border-b p-3 rounded-lg md:rounded-none md:py-1 md:px-0 bg-accent/50 border md:border-x-0 md:border-t-0 md:bg-transparent hover:border-orange-400 transition-all"
         >
           {item.name}
           <span className="text-sm text-muted-foreground group-hover:text-foreground transition-all">

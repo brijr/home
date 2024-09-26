@@ -93,7 +93,7 @@ const GradientProvider = ({ children }: { children: ReactNode }) => {
   return (
     <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:h-screen overflow-hidden">
       <div className="overflow-y-auto md:overflow-y-scroll no-scrollbar fade-in px-4 md:px-6">
-        <div className="my-6 md:my-12 font-sans max-w-2xl mx-auto antialiased selection:bg-indigo-500/20 selection:text-indigo-900 dark:selection:bg-indigo-500/30 dark:selection:text-indigo-100">
+        <div className="my-6 md:my-12 font-sans max-w-2xl mx-auto antialiased selection:bg-amber-500/20 selection:text-amber-900 dark:selection:bg-amber-500/30 dark:selection:text-amber-100">
           {children}
         </div>
       </div>
