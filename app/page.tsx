@@ -24,7 +24,7 @@ export default function Home() {
 const Hero = () => (
   <Section className="space-y-4">
     <h1 className="sr-only">Bridger Tower | Design Engineer</h1>
-    <h2 className="text-4xl font-medium">
+    <h2 className="text-2xl md:text-4xl font-medium">
       <Balancer>
         Design Engineer building software, websites, and brands.
       </Balancer>
@@ -74,8 +74,8 @@ const Nav = () => (
     <section className="md:p-6">
       <div
         className={cn(
-          "fixed top-0 z-[9999] inset-x-0 p-6",
-          "md:static md:p-0 max-w-screen-md md:mx-auto",
+          "fixed top-0 z-[9999] inset-x-0 p-6 text-black",
+          "md:static md:p-0 max-w-screen-md md:mx-auto md:text-foreground",
           "flex items-center justify-between",
           "text-sm md:text-muted-foreground"
         )}
@@ -84,7 +84,7 @@ const Nav = () => (
           <Image
             src={logo}
             alt="Bridger Tower Logo"
-            className="invert dark:invert-0"
+            className="invert md:dark:invert-0"
             width={32}
             height={26.05}
           />
