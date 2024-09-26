@@ -76,43 +76,50 @@ const Nav = () => (
   </nav>
 );
 
-const footerLinks = [
-  {
-    name: "YouTube",
-    href: "https://youtube.com/@bridgertower",
-  },
-  {
-    name: "Email",
-    href: "mailto:bridger@wip.ac",
-  },
-  {
-    name: "GitHub",
-    href: "https://github.com/brijr",
-  },
-];
+const Footer = () => {
+  const footerLinks = [
+    {
+      name: "YouTube",
+      href: "https://youtube.com/@bridgertower",
+    },
+    {
+      name: "Email",
+      href: "mailto:bridger@wip.ac",
+    },
+    {
+      name: "GitHub",
+      href: "https://github.com/brijr",
+    },
+  ];
 
-const Footer = () => (
-  <footer>
-    <Section className="flex items-center justify-between text-sm text-muted-foreground">
-      <div className="flex items-center gap-4">
-        <ModeToggle />
-        {footerLinks.map((link) => (
-          <a
-            key={link.name}
-            className="transition-all hover:text-foreground"
-            href={link.href}
-            target="_blank"
-          >
-            {link.name}
-          </a>
-        ))}
-      </div>
-      <a href="https://x.com/bridgertower" target="_blank">
-        © Bridger Tower, 2024
-      </a>
-    </Section>
-  </footer>
-);
+  return (
+    <footer>
+      <Section className="flex items-center justify-between text-sm text-muted-foreground">
+        <div className="flex items-center gap-4">
+          <ModeToggle />
+          {footerLinks.map((link) => (
+            <a
+              key={link.name}
+              className="transition-all hover:text-foreground"
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
+        <a
+          href="https://x.com/bridgertower"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          © Bridger Tower, 2024
+        </a>
+      </Section>
+    </footer>
+  );
+};
 
 const Section = ({
   children,
