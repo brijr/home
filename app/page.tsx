@@ -62,8 +62,8 @@ const Hero = () => (
       </h2>
       <p className="text-muted-foreground">
         <Balancer>
-          Passionate about the intersection of design, technology, applied
-          artificial intelligence, and marketing.
+          Passionate about the intersection of design, technology, artificial
+          intelligence, and marketing.
         </Balancer>
       </p>
     </Section>
