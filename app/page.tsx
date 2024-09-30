@@ -117,7 +117,7 @@ const ProjectLink = ({ project, index }: ProjectLinkProps) => (
         <span className="hidden xl:block text-xs px-1 py-px rounded-sm bg-accent/30 border">
           {project.tag}
         </span>
-        <ExternalLink className="w-0 h-3 opacity-0 group-hover:w-3 group-hover:opacity-100 transition-all" />
+        <ExternalLink className="w-0 h-3 hidden md:block opacity-0 group-hover:w-3 group-hover:opacity-100 transition-all" />
       </h4>
     </Link>
   </div>
