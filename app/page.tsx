@@ -85,7 +85,7 @@ const Work = () => (
 const Email = () => (
   <div className="fade-up-3">
     <Section>
-      <EmailForm />
+      <EmailForm label="Subscribe for design related content" />
     </Section>
   </div>
 );
