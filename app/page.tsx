@@ -1,4 +1,7 @@
 import { ModeToggle } from "@/components/mode-toggle";
+import { EmailForm } from "@/components/email-form";
+import { ExternalLink } from "lucide-react";
+import { ReactNode } from "react";
 import { projects } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
@@ -6,8 +9,6 @@ import Balancer from "react-wrap-balancer";
 import logo from "@/public/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
-import { ReactNode } from "react";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Nav />
         <Hero />
         <Work />
+        <Email />
       </div>
       <Footer />
     </main>
@@ -76,6 +78,14 @@ const Work = () => (
           <ProjectLink key={project.href} project={project} index={index} />
         ))}
       </div>
+    </Section>
+  </div>
+);
+
+const Email = () => (
+  <div className="fade-up-3">
+    <Section>
+      <EmailForm />
     </Section>
   </div>
 );
