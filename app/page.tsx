@@ -29,7 +29,7 @@ const Nav = () => (
         className={cn(
           "md:static md:p-0 md:max-w-screen-md md:mx-auto md:text-foreground",
           "flex items-center justify-between",
-          "text-sm md:text-muted-foreground",
+          "text-sm md:text-muted-foreground"
         )}
       >
         <Link href="/" className="transition-all hover:opacity-80">
@@ -94,7 +94,7 @@ const ProjectLink = ({ project, index }: ProjectLinkProps) => (
         "group grid items-center rounded-sm p-3 md:py-2 md:px-3 md:-mx-3",
         "bg-accent/10 md:bg-transparent",
         "sm:grid-cols-[10rem_1fr] xl:grid-cols-[10rem_1fr_auto]",
-        "hover:bg-accent/50 border md:border-transparent md:hover:border-border transition-all",
+        "hover:bg-accent/50 border md:border-transparent md:hover:border-border transition-all"
       )}
     >
       <h3 className="group-hover:underline -mt-[3px] decoration-dotted underline-offset-4 decoration-primary/50 transition-all">
