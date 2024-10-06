@@ -35,12 +35,12 @@
     "react-use-measure": "^2.1.1",
     "react-wrap-balancer": "^1.1.1",
     "sharp": "^0.33.4",
-    "tailwind-merge": "^2.4.0",
+    "tailwind-merge": "^2.5.3",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.13",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

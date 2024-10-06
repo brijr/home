@@ -22,16 +22,18 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <Layout>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <AnalyticsProvider>
-          <GradientProvider>{children}</GradientProvider>
-        </AnalyticsProvider>
-      </ThemeProvider>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <AnalyticsProvider>
+            <GradientProvider>{children}</GradientProvider>
+          </AnalyticsProvider>
+        </ThemeProvider>
+      </body>
     </Layout>
   );
 }
