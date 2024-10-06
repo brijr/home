@@ -125,7 +125,6 @@ const ProjectLink = ({ project, index }: ProjectLinkProps) => (
 
 const Footer = () => {
   const footerLinks = [
-    { name: "Calendar", href: "https://cal.com/brijr" },
     { name: "YouTube", href: "https://youtube.com/@bridgertower" },
     { name: "Email", href: "mailto:bridger@wip.ac" },
     { name: "GitHub", href: "https://github.com/brijr" },
