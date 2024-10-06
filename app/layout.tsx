@@ -5,8 +5,14 @@ import { Layout } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 import { Gradient } from "@/components/gradient";
+import { Manrope } from "next/font/google";
 
 import type { Metadata } from "next";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bridger.to"),
@@ -22,7 +28,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <Layout>
-      <body>
+      <body className={manrope.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
