@@ -49,7 +49,7 @@ export const projects: Project[] = [
   },
   {
     name: "brijr/craft",
-    href: "https://bridger.to/craft",
+    href: "https://craft-ds.com",
     description: "React design system for websites",
     tag: "open source",
   },
