@@ -24,6 +24,12 @@ export const projects: Project[] = [
     tag: "software",
   },
   {
+    name: "Swyftfin",
+    href: "https://swyftfin.com",
+    description: "Financing for home services",
+    tag: "software",
+  },
+  {
     name: "Router.so",
     href: "https://router.so",
     description: "Open source form backend for developers",
