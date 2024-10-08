@@ -1,17 +1,5 @@
 export const projects: Project[] = [
   {
-    name: "WIP Design",
-    href: "https://wip-design.com",
-    description: "Community for design engineers",
-    tag: "community",
-  },
-  {
-    name: "ASAP Engineering",
-    href: "https://asap.engineering",
-    description: "Community for technical entrepreneurs",
-    tag: "community",
-  },
-  {
     name: "WaveFinder",
     href: "https://wavefinder.io",
     description: "AI first Advertising Platform for FB and TikTok",
@@ -78,9 +66,21 @@ export const projects: Project[] = [
     tag: "ventures",
   },
   {
-    name: "WIP",
+    name: "WIP/AC",
     href: "https://wip.ac",
     description: "Web Design and Development Source",
     tag: "ventures",
+  },
+  {
+    name: "WIP Design",
+    href: "https://wip-design.com",
+    description: "Community for design engineers",
+    tag: "community",
+  },
+  {
+    name: "ASAP Engineering",
+    href: "https://asap.engineering",
+    description: "Community for technical entrepreneurs",
+    tag: "community",
   },
 ];
