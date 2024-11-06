@@ -11,6 +11,7 @@ export const Gradient = () => {
 
   return (
     <motion.div
+      // @ts-ignore
       className={cn(
         "relative w-full h-[100vw] md:h-screen",
         "before:content-[''] before:absolute before:inset-0",
