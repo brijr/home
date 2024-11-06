@@ -13,7 +13,7 @@ export const Gradient = () => {
     <motion.div
       // @ts-ignore
       className={cn(
-        "relative w-full h-[100vw] md:h-screen",
+        "relative w-full h-[100vw] sm:h-48 lg:h-screen",
         "before:content-[''] before:absolute before:inset-0",
         "before:bg-radial-gradient before:from-white/20 before:to-transparent before:to-70%",
         "before:mix-blend-overlay",

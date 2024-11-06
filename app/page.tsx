@@ -25,7 +25,7 @@ export default function Home() {
 }
 
 const Nav = () => (
-  <nav className="absolute md:static top-0 inset-x-0 z-[9999] text-black fade-down">
+  <nav className="absolute lg:static top-0 inset-x-0 z-[9999] text-black fade-down">
     <Section>
       <div
         className={cn(
