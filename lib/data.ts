@@ -1,14 +1,20 @@
 export const projects: Project[] = [
   {
-    name: "WaveFinder",
-    href: "https://wavefinder.io",
-    description: "AI first Advertising Platform for FB and TikTok",
-    tag: "software",
+    name: "Router.so",
+    href: "https://router.so",
+    description: "Open source form backend for developers",
+    tag: "open source",
   },
   {
     name: "Outr",
-    href: "https://outr.io",
+    href: "https://outr.ai",
     description: "Personalized cold outreach with AI",
+    tag: "software",
+  },
+  {
+    name: "WaveFinder",
+    href: "https://wavefinder.io",
+    description: "AI first Advertising Platform for FB and TikTok",
     tag: "software",
   },
   {
@@ -18,10 +24,10 @@ export const projects: Project[] = [
     tag: "software",
   },
   {
-    name: "Router.so",
-    href: "https://router.so",
-    description: "Open source form backend for developers",
-    tag: "open source",
+    name: "Abstract",
+    href: "https://abstract.ac",
+    description: "Portfolios for creatives",
+    tag: "software",
   },
   {
     name: "BuilderKit",
@@ -66,7 +72,7 @@ export const projects: Project[] = [
     tag: "ventures",
   },
   {
-    name: "WIP/AC",
+    name: "WIP / AC",
     href: "https://wip.ac",
     description: "Web Design and Development Source",
     tag: "ventures",
@@ -74,8 +80,8 @@ export const projects: Project[] = [
   {
     name: "WIP Design",
     href: "https://wip-design.com",
-    description: "Community for design engineers",
-    tag: "community",
+    description: "Tools and resources for designers",
+    tag: "ventures",
   },
   {
     name: "ASAP Engineering",
