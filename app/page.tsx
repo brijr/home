@@ -43,7 +43,11 @@ const Nav = () => (
             height={26.05}
           />
         </Link>
-        <h3>bridger tower :: design engineer</h3>
+        <h3>
+          <a href="https://github.com/brijr">
+            bridger tower :: design engineer
+          </a>
+        </h3>
       </div>
     </Section>
   </nav>
