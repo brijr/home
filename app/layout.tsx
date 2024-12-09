@@ -5,11 +5,11 @@ import { Layout } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 import { Gradient } from "@/components/gradient";
-import { Manrope } from "next/font/google";
+import { Manrope as Font } from "next/font/google";
 
 import type { Metadata } from "next";
 
-const manrope = Manrope({
+const font = Font({
   subsets: ["latin"],
   variable: "--font-manrope",
 });
@@ -28,7 +28,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <Layout>
-      <body className={manrope.className}>
+      <body className={font.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
