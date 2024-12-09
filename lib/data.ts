@@ -1,11 +1,5 @@
 export const projects: Project[] = [
   {
-    name: "Router.so",
-    href: "https://router.so",
-    description: "Open source form backend for developers",
-    tag: "open source",
-  },
-  {
     name: "Outr",
     href: "https://outr.ai",
     description: "Personalized cold outreach with AI",
@@ -30,9 +24,9 @@ export const projects: Project[] = [
     tag: "software",
   },
   {
-    name: "BuilderKit",
-    href: "https://github.com/alpinecodex/builderkit",
-    description: "AI writing tool",
+    name: "Router.so",
+    href: "https://router.so",
+    description: "Open source form backend for developers",
     tag: "open source",
   },
   {
@@ -66,27 +60,9 @@ export const projects: Project[] = [
     tag: "ventures",
   },
   {
-    name: "Studio Mojave",
-    href: "https://studiomojave.com",
-    description: "Design Studio in St George, Utah",
-    tag: "ventures",
-  },
-  {
-    name: "WIP / AC",
-    href: "https://wip.ac",
-    description: "Web Design and Development Source",
-    tag: "ventures",
-  },
-  {
     name: "WIP Design",
     href: "https://wip-design.com",
     description: "Tools and resources for designers",
     tag: "ventures",
-  },
-  {
-    name: "ASAP Engineering",
-    href: "https://asap.engineering",
-    description: "Community for technical entrepreneurs",
-    tag: "community",
   },
 ];
