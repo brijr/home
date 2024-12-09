@@ -18,12 +18,6 @@ export const projects: Project[] = [
     tag: "software",
   },
   {
-    name: "Abstract",
-    href: "https://abstract.ac",
-    description: "Portfolios for creatives",
-    tag: "software",
-  },
-  {
     name: "Router.so",
     href: "https://router.so",
     description: "Open source form backend for developers",
